@@ -3,8 +3,9 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 
 describe('App', () => {
-  it('renders the Next Level Events name', () => {
+  it('renders the Navbar, a homepage placeholder, and the Footer together', () => {
     render(<App />);
-    expect(screen.getByText('Next Level Events')).toBeInTheDocument();
+    expect(screen.getAllByAltText('Next Level Events').length).toBeGreaterThanOrEqual(2);
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument();
   });
 });

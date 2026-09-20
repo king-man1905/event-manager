@@ -1,3 +1,16 @@
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import AppRoutes from './AppRoutes';
+
 export default function App() {
-  return <div>Next Level Events</div>;
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <main>
+        <AppRoutes />
+      </main>
+      <Footer />
+    </BrowserRouter>
+  );
 }
