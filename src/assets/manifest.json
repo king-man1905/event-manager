@@ -68,5 +68,167 @@
     "altText": "Umaid Bhawan Palace in Jodhpur, Rajasthan, a sandstone palace with a large central dome",
     "status": "placeholder",
     "note": "Umaid Bhawan Palace, Jodhpur, Rajasthan — a real, iconic Indian destination-wedding venue."
+  },
+  "wedding-cultural-north-indian": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Indian_Wedding_Ritual_-_Jaimala_or_Varmala_%2801%29.jpg/1280px-Indian_Wedding_Ritual_-_Jaimala_or_Varmala_%2801%29.jpg",
+    "source": "Wikimedia Commons — iMahesh, \"Indian Wedding Ritual - Jaimala or Varmala (01)\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A Hindu bride and groom exchanging floral garlands during the jaimala ritual, mandap decorated with fairy lights behind them",
+    "status": "placeholder",
+    "note": "Jaimala/varmala is the ritual most associated with North Indian Hindu weddings specifically, distinguishing it from the South Indian and Bengali ceremony styles sourced separately."
+  },
+  "wedding-cultural-south-indian": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Wedding_ceremony_in_Tamil_Nadu_01.jpg/1280px-Wedding_ceremony_in_Tamil_Nadu_01.jpg",
+    "source": "Wikimedia Commons — Kritzolina, \"Wedding ceremony in Tamil Nadu 01\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A Tamil Hindu bride in a red and gold silk saree performing a traditional ritual with her seated parents",
+    "status": "placeholder",
+    "note": "Genuine Tamil Nadu wedding ritual, distinct ceremony style and attire from North Indian weddings."
+  },
+  "wedding-cultural-punjabi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Sikh_wedding_ceremony_in_a_Gurudwara.jpg/1280px-Sikh_wedding_ceremony_in_a_Gurudwara.jpg",
+    "source": "Wikimedia Commons — Japleenpasricha, \"Sikh wedding ceremony in a Gurudwara\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A Sikh bride and groom facing the Guru Granth Sahib under a gold canopy in a Gurudwara",
+    "status": "placeholder",
+    "note": "Unambiguously Sikh/Punjabi — Guru Granth Sahib and Ik Onkar symbol visible in a Gurudwara setting."
+  },
+  "wedding-cultural-bengali": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Portrait_of_a_Bengali_Bride_01.jpg/1280px-Portrait_of_a_Bengali_Bride_01.jpg",
+    "source": "Wikimedia Commons — Goutam1962, \"Portrait of a Bengali Bride 01\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A Bengali bride in a red and gold Benarasi saree with a sheer red veil, gold jewelry and a nose ring",
+    "status": "placeholder",
+    "note": "Distinctive Bengali bridal styling — red Benarasi saree, nath (nose ring), red chandan forehead pattern."
+  },
+  "wedding-cultural-rajasthani": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Rajasthani_Bride_in_Traditional_Attire.jpg/1280px-Rajasthani_Bride_in_Traditional_Attire.jpg",
+    "source": "Wikimedia Commons — Prithvipalsinghrathore, \"Rajasthani Bride in Traditional Attire\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A Rajasthani bride in a red gota-patti embroidered lehenga in front of a colourful bandhani textile backdrop",
+    "status": "placeholder",
+    "note": "Distinctly Rajasthani gota-patti embroidery and bandhani/patchwork textile setting."
+  },
+  "wedding-cultural-gujarati": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Hindu_Bride%2C_Ahmedabad%2C_Gujarat.jpg/1280px-Hindu_Bride%2C_Ahmedabad%2C_Gujarat.jpg",
+    "source": "Wikimedia Commons — Yann Forget, \"Hindu Bride, Ahmedabad, Gujarat\" (Commons Featured Picture)",
+    "license": "CC BY-SA 4.0",
+    "altText": "A Gujarati bride in red and green panetar bridal wear holding a ceremonial copper kalash topped with a coconut",
+    "status": "placeholder",
+    "note": "Panetar-style bridal wear and the kalash ritual are specifically Gujarati."
+  },
+  "wedding-cultural-muslim": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Nikah_%28Marriage_in_Islam%29.jpg/1280px-Nikah_%28Marriage_in_Islam%29.jpg",
+    "source": "Wikimedia Commons — Saddam19, \"Nikah (Marriage in Islam)\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A groom in a gold sherwani during a Nikah ceremony, surrounded by men in white kurtas and topi caps as the marriage contract is signed",
+    "status": "placeholder",
+    "note": "Unambiguous Nikah ceremony imagery — marriage contract signing, topi caps, no visual ambiguity with a Hindu ceremony."
+  },
+  "wedding-cultural-christian": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Kerala_Christian_Wedding.jpg/1280px-Kerala_Christian_Wedding.jpg",
+    "source": "Wikimedia Commons — Nikhil Jose 7, \"Kerala Christian Wedding\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A Kerala Christian bride in a cream saree and groom in a dark suit walking under an umbrella with tropical palm trees behind them",
+    "status": "placeholder",
+    "note": "Cream saree bridal colour and Western-suit groom attire are distinctly Kerala Christian, not Hindu-red."
+  },
+  "wedding-function-haldi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Haldi_Ceremony_-_An_Indian_Wedding_Ritual.jpg/1280px-Haldi_Ceremony_-_An_Indian_Wedding_Ritual.jpg",
+    "source": "Wikimedia Commons — The open draft, \"Haldi Ceremony - An Indian Wedding Ritual\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A bride in yellow seated while family members apply turmeric paste to her face and arms during the Haldi ceremony",
+    "status": "placeholder"
+  },
+  "wedding-function-mehendi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Bridal_Mehndi.JPG/1280px-Bridal_Mehndi.JPG",
+    "source": "Wikimedia Commons — Iramuthusamy, \"Bridal Mehndi\"",
+    "license": "CC BY-SA 3.0",
+    "altText": "A close-up of a bride's two open palms fully covered in intricate henna patterns with gold bangles",
+    "status": "placeholder"
+  },
+  "wedding-function-sangeet": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Indian_wedding_sangeet.jpg/1280px-Indian_wedding_sangeet.jpg",
+    "source": "Wikimedia Commons — 03Ani03, \"Indian wedding sangeet\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A night-time Sangeet stage performance with a floral arch backdrop, string lights and rose petals scattered on the floor",
+    "status": "placeholder"
+  },
+  "wedding-function-baraat": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/A_wedding_procession_with_the_bridegroom_on_a_horse%2C_Pushkar%2C_Rajasthan.jpg/1280px-A_wedding_procession_with_the_bridegroom_on_a_horse%2C_Pushkar%2C_Rajasthan.jpg",
+    "source": "Wikimedia Commons — Flickr user pnglife (via FlickreviewR), \"A wedding procession with the bridegroom on a horse, Pushkar, Rajasthan\"",
+    "license": "CC BY-SA 2.0",
+    "altText": "A groom in an ornate turban riding a white horse through a market street at night during a baraat procession",
+    "status": "placeholder"
+  },
+  "wedding-function-reception": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/MarriageRECEPTION-India-tamilword23.2.jpg/960px-MarriageRECEPTION-India-tamilword23.2.jpg",
+    "source": "Wikimedia Commons — தமிழ்உழவன், \"MarriageRECEPTION-India-tamilword23.2\"",
+    "license": "Public Domain",
+    "altText": "A decorated Indian wedding reception stage with a red velvet seat for the couple and a floral arch backdrop",
+    "status": "placeholder"
+  },
+  "wedding-function-engagement": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Indian_engagement_ceremony_03.jpg/1280px-Indian_engagement_ceremony_03.jpg",
+    "source": "Wikimedia Commons — AmanAgrahari01, \"Indian engagement ceremony 03\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A priest-led Indian engagement ceremony ritual around a decorated puja table with marigold garlands and a kalash",
+    "status": "placeholder"
+  },
+  "wedding-function-jaimala": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Indian_Wedding_Ritual_-_Jaimala_or_Varmala_%2802%29.jpg/1280px-Indian_Wedding_Ritual_-_Jaimala_or_Varmala_%2802%29.jpg",
+    "source": "Wikimedia Commons — iMahesh, \"Indian Wedding Ritual - Jaimala or Varmala (02)\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A groom placing a floral garland around the bride's neck during the jaimala ceremony, both smiling closely",
+    "status": "placeholder"
+  },
+  "wedding-experience-special-entry": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Dancing_Barajatri_With_Bridegroom_-_Odia_Hindu_Wedding_Ceremony_-_Kamakhyanagar_-_Dhenkanal_2018-01-24_7878.JPG/1280px-Dancing_Barajatri_With_Bridegroom_-_Odia_Hindu_Wedding_Ceremony_-_Kamakhyanagar_-_Dhenkanal_2018-01-24_7878.JPG",
+    "source": "Wikimedia Commons — Biswarup Ganguly, \"Dancing Barajatri With Bridegroom - Odia Hindu Wedding Ceremony\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A groom in an ornate gold-embroidered sherwani and maroon turban greeting with folded hands during his baraat entrance",
+    "status": "placeholder"
+  },
+  "wedding-experience-photography": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Candid_Photography_in_Trichy.jpg/1280px-Candid_Photography_in_Trichy.jpg",
+    "source": "Wikimedia Commons — Selva wedding photography, \"Candid Photography in Trichy\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A close-up candid shot of a bride and groom's hands with henna and bangles during a South Indian wedding ritual",
+    "status": "placeholder"
+  },
+  "wedding-experience-guest": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Best_Wedding_venues_in_pune.jpg/1280px-Best_Wedding_venues_in_pune.jpg",
+    "source": "Wikimedia Commons — Bhanu2398, \"Best Wedding venues in pune\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "Wedding guests dressed in yellow seated at an outdoor function with marigold decorations and a golden-hour sky",
+    "status": "placeholder"
+  },
+  "wedding-decor-floral": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sustainable_flower_decoration.jpg/1280px-Sustainable_flower_decoration.jpg",
+    "source": "Wikimedia Commons — Megh Banthia, \"Sustainable flower decoration\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A decorative arch draped in yellow fabric and marigold flowers with urns of marigold blooms, Udaipur",
+    "status": "placeholder"
+  },
+  "wedding-decor-lighting": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Wedding_Lights.jpg/1280px-Wedding_Lights.jpg",
+    "source": "Wikimedia Commons — HiDave1, \"Wedding Lights\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A banquet hall ceiling with multiple crystal chandeliers and gold moulding, captioned as Indian wedding lighting",
+    "status": "placeholder"
+  },
+  "wedding-decor-stage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Wedding_Stage.jpg/1280px-Wedding_Stage.jpg",
+    "source": "Wikimedia Commons — Kasyap, \"Wedding Stage\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A gold-pillared Indian wedding stage with deity idols and red, white and maroon floral garlands",
+    "status": "placeholder"
+  },
+  "wedding-decor-backdrop": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Marriage_decorations.jpg/960px-Marriage_decorations.jpg",
+    "source": "Wikimedia Commons — Mahalaxmi dev, \"Marriage decorations\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A decorated indoor floral wall backdrop with hanging bells and pink drapery at a pre-wedding function",
+    "status": "placeholder-lower-resolution — use at card scale, not full-bleed hero"
   }
 }
