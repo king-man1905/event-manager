@@ -61,8 +61,9 @@ export default function ExperienceDetail() {
     return Array.from({ length: Math.min(count, list.length) }, (_, i) => list[(offset + i) % list.length]);
   }
 
-  const siblingsWithImage = layerConfig.data.filter((entry) => entry.slug !== item.slug && entry.imageId);
-  const myIndex = layerConfig.data.findIndex((entry) => entry.slug === item.slug);
+  const allWithImage = layerConfig.data.filter((entry) => entry.imageId);
+  const siblingsWithImage = allWithImage.filter((entry) => entry.slug !== item.slug);
+  const myIndex = allWithImage.findIndex((entry) => entry.slug === item.slug);
   const rotatedSiblings = pickRotated(siblingsWithImage, myIndex, 2);
   const galleryEntries = item.depth === 'full'
     ? [

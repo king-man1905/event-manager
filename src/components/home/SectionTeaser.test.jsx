@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import SectionTeaser from './SectionTeaser';
+import { SOCIALS } from '../../data/contact';
 
 const internalTeaser = {
   id: 'sample-internal',
@@ -17,7 +18,7 @@ const externalTeaser = {
   ...internalTeaser,
   id: 'sample-external',
   ctaLabel: 'Follow on Instagram',
-  href: 'https://www.instagram.com/nextlevelevents.in',
+  href: SOCIALS.instagram,
 };
 
 describe('SectionTeaser', () => {
@@ -38,7 +39,7 @@ describe('SectionTeaser', () => {
       </MemoryRouter>
     );
     const cta = screen.getByRole('link', { name: 'Follow on Instagram' });
-    expect(cta).toHaveAttribute('href', 'https://www.instagram.com/nextlevelevents.in');
+    expect(cta).toHaveAttribute('href', SOCIALS.instagram);
     expect(cta).toHaveAttribute('target', '_blank');
   });
 });

@@ -1,3 +1,5 @@
+import { SOCIALS } from './contact';
+
 export const homeTeasers = [
   {
     id: 'weddings-flagship',
@@ -66,6 +68,6 @@ export const homeTeasers = [
     title: 'Follow the real work as it happens.',
     description: 'Reels, films and behind-the-scenes footage from real Next Level Events celebrations.',
     ctaLabel: 'Follow on Instagram',
-    href: 'https://www.instagram.com/nextlevelevents.in',
+    href: SOCIALS.instagram,
   },
 ];
