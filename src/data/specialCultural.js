@@ -1,0 +1,41 @@
+export const specialCultural = [
+  {
+    slug: 'diwali-celebrations',
+    label: 'Diwali Celebrations',
+    imageId: 'cultural-diwali',
+    depth: 'full',
+    teaser: 'Diyas, rangoli and a grand Diwali setup for home or office.',
+    description: 'Diwali décor is about warmth and light — diyas, rangoli and festive styling done properly, whether it\'s a home celebration or an office-wide setup.',
+    whatWeHandle: [
+      'Diya and rangoli styling',
+      'Festive lighting design',
+      'Entry and venue décor',
+      'Setup timed around the festival dates',
+    ],
+    href: '/events/special-cultural/diwali-celebrations',
+  },
+  {
+    slug: 'navratri-garba',
+    label: 'Navratri & Garba',
+    imageId: 'cultural-navratri',
+    depth: 'light',
+    teaser: 'Navratri and Garba night styling, built for dancing and colour.',
+    href: '/events/special-cultural/navratri-garba',
+  },
+  {
+    slug: 'holi-celebrations',
+    label: 'Holi Celebrations',
+    imageId: 'cultural-holi',
+    depth: 'light',
+    teaser: 'Holi celebrations styled and coordinated, colour included.',
+    href: '/events/special-cultural/holi-celebrations',
+  },
+  {
+    slug: 'cultural-religious-events',
+    label: 'Other Cultural & Religious Celebrations',
+    imageId: 'cultural-religious-general',
+    depth: 'light',
+    teaser: 'Other cultural and religious celebrations, styled with the right traditions in mind.',
+    href: '/events/special-cultural/cultural-religious-events',
+  },
+];
