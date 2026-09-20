@@ -1044,7 +1044,13 @@ describe('ExperienceDetail', () => {
   it('renders an image-optional item as a text panel, not a broken image', () => {
     renderAt('/events/weddings/functions/cocktail');
     expect(screen.getByRole('heading', { name: 'Cocktail' })).toBeInTheDocument();
-    expect(screen.queryByRole('img')).not.toBeInTheDocument();
+    // Scoped to the hero region — the page's own Related Experiences section
+    // renders other items' EventCards further down, which do have real images
+    // (e.g. engagement/haldi/mehendi), so an unscoped queryByRole('img') would
+    // find those and give a false failure. Same scoping principle as the
+    // gallery test above.
+    const hero = screen.getByTestId('hero');
+    expect(within(hero).queryByRole('img')).not.toBeInTheDocument();
   });
 
   it('renders a contextual WhatsApp CTA including the item label', () => {
@@ -1162,7 +1168,7 @@ export default function ExperienceDetail() {
           ]}
         />
       </div>
-      <div className="relative mt-6 h-[50vh] min-h-[360px] w-full overflow-hidden">
+      <div data-testid="hero" className="relative mt-6 h-[50vh] min-h-[360px] w-full overflow-hidden">
         {image ? (
           <img src={image.url} alt={image.altText} className="h-full w-full object-cover" />
         ) : (
