@@ -74,7 +74,7 @@ export default function WeddingsHub() {
         </div>
       </section>
 
-      <nav className="sticky top-16 z-30 border-b border-charcoal/10 bg-ivory">
+      <nav className="sticky top-20 z-30 border-b border-charcoal/10 bg-ivory">
         <div className="mx-auto flex max-w-7xl flex-wrap gap-6 px-6 py-4">
           {SUB_NAV.map((section) => (
             <Link
