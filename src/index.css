@@ -1,0 +1,15 @@
+:root {
+  --color-charcoal: #1c1a17;
+  --color-ivory: #faf6ef;
+  --color-neutral: #ece4d3;
+  --color-gold: #c19743;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-charcoal);
+}
