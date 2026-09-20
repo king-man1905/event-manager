@@ -18,4 +18,22 @@ describe('EventCard', () => {
     expect(link).toHaveAttribute('href', event.href);
     expect(screen.getByRole('img').getAttribute('alt').length).toBeGreaterThan(10);
   });
+
+  it('renders a text-only panel instead of an image when imageId is null', () => {
+    const event = {
+      slug: 'cocktail',
+      label: 'Cocktail',
+      teaser: 'An evening event with its own bar, lighting and mood.',
+      imageId: null,
+      href: '/events/weddings/functions/cocktail',
+    };
+    render(
+      <MemoryRouter>
+        <EventCard event={event} />
+      </MemoryRouter>
+    );
+    expect(screen.queryByRole('img')).not.toBeInTheDocument();
+    expect(screen.getAllByText('Cocktail').length).toBeGreaterThan(0);
+    expect(screen.getByRole('link')).toHaveAttribute('href', event.href);
+  });
 });
