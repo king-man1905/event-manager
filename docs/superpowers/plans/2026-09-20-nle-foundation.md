@@ -397,7 +397,7 @@ git commit -m "feat: add verified contact data and WhatsAppCTA component"
     "source": "Unsplash",
     "license": "Unsplash License",
     "altText": "An elegant banquet hall set with round tables, gold chairs and chandeliers for a private celebration",
-    "status": "placeholder-generic — replace with an Indian social-celebration photo in a later phase"
+    "status": "placeholder"
   },
   "vertical-kids-family": {
     "url": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80",
@@ -2168,15 +2168,16 @@ import Home from './Home';
 
 describe('Home', () => {
   it('renders all fourteen sections in the brief\'s specified order', () => {
-    render(
+    const { container } = render(
       <MemoryRouter>
         <Home />
       </MemoryRouter>
     );
-    const headings = screen.getAllByRole('heading', { level: 1 }).concat(
-      screen.getAllByRole('heading', { level: 2 })
+    // Query h1/h2 directly off the DOM (not two separate getAllByRole calls)
+    // so order reflects the actual document order, not query order.
+    const headingText = Array.from(container.querySelectorAll('h1, h2')).map(
+      (h) => h.textContent
     );
-    const headingText = headings.map((h) => h.textContent);
 
     const expectedOrder = [
       "Every celebration, planned like it's the only one that matters.", // Hero
