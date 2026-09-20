@@ -49,7 +49,7 @@ export const culturalWeddings = [
     label: 'Bengali',
     imageId: 'wedding-cultural-bengali',
     depth: 'full',
-    teaser: 'Conch shells, red-and-white bridal saris and rituals rooted in Bengali tradition.',
+    teaser: 'Conch shells, red-and-gold bridal saris and rituals rooted in Bengali tradition.',
     description: 'Bengali weddings carry distinct rituals — the Bor Jatri procession, Shubho Drishti, and Mala Bodol — with the bride in the traditional red-and-white Benarasi saree. We plan around this specific ceremonial order.',
     whatWeHandle: [
       "Bor Jatri (groom's procession) coordination",

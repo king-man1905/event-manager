@@ -1149,11 +1149,20 @@ export default function ExperienceDetail() {
 
   const image = item.imageId ? getImage(item.imageId) : null;
   const others = layerConfig.data.filter((entry) => entry.slug !== item.slug).slice(0, 3);
-  const gallerySiblingImages = item.depth === 'full'
-    ? layerConfig.data
-        .filter((entry) => entry.slug !== item.slug && entry.imageId)
-        .slice(0, 2)
-        .map((entry) => getImage(entry.imageId))
+
+  function pickRotated(list, offset, count) {
+    if (list.length === 0) return [];
+    return Array.from({ length: Math.min(count, list.length) }, (_, i) => list[(offset + i) % list.length]);
+  }
+
+  const siblingsWithImage = layerConfig.data.filter((entry) => entry.slug !== item.slug && entry.imageId);
+  const myIndex = layerConfig.data.findIndex((entry) => entry.slug === item.slug);
+  const rotatedSiblings = pickRotated(siblingsWithImage, myIndex, 2);
+  const galleryEntries = item.depth === 'full'
+    ? [
+        ...(item.imageId ? [{ slug: item.slug, image }] : []),
+        ...rotatedSiblings.map((entry) => ({ slug: entry.slug, image: getImage(entry.imageId) })),
+      ]
     : [];
 
   return (
@@ -1197,18 +1206,23 @@ export default function ExperienceDetail() {
                 ))}
               </ul>
             </div>
-            {gallerySiblingImages.length > 0 && (
-              <div data-testid="gallery" className="mt-10 grid grid-cols-2 gap-4">
-                {gallerySiblingImages.map((galleryImage) => (
-                  <img
-                    key={galleryImage.url}
-                    src={galleryImage.url}
-                    alt={galleryImage.altText}
-                    loading="lazy"
-                    className="aspect-square w-full rounded object-cover"
-                  />
-                ))}
-              </div>
+            {galleryEntries.length > 0 && (
+              <>
+                <p className="mt-10 text-sm uppercase tracking-widest text-charcoal/50">
+                  More from {layerConfig.label}
+                </p>
+                <div data-testid="gallery" className="mt-4 grid grid-cols-2 gap-4">
+                  {galleryEntries.map(({ slug, image: galleryImage }) => (
+                    <img
+                      key={slug}
+                      src={galleryImage.url}
+                      alt={galleryImage.altText}
+                      loading="lazy"
+                      className="aspect-square w-full rounded object-cover"
+                    />
+                  ))}
+                </div>
+              </>
             )}
           </>
         )}
@@ -1423,7 +1437,7 @@ export default function WeddingsHub() {
         </div>
       </section>
 
-      <nav className="sticky top-16 z-30 border-b border-charcoal/10 bg-ivory">
+      <nav className="sticky top-20 z-30 border-b border-charcoal/10 bg-ivory">
         <div className="mx-auto flex max-w-7xl flex-wrap gap-6 px-6 py-4">
           {SUB_NAV.map((section) => (
             <Link

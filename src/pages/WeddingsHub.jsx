@@ -4,6 +4,7 @@ import WhatsAppCTA from '../components/WhatsAppCTA';
 import EventCard from '../components/EventCard';
 import EditorialGrid from '../components/EditorialGrid';
 import SectionHeading from '../components/SectionHeading';
+import { SOCIALS } from '../data/contact';
 import { culturalWeddings } from '../data/culturalWeddings';
 import { weddingFunctions } from '../data/weddingFunctions';
 import { weddingExperiences } from '../data/weddingExperiences';
@@ -35,7 +36,7 @@ const PLANNING_CAPABILITIES = [
 
 function LayerSection({ id, eyebrow, title, description, items }) {
   return (
-    <section id={id} className="mx-auto max-w-7xl px-6 py-20">
+    <section id={id} className="mx-auto max-w-7xl scroll-mt-36 px-6 py-20">
       <SectionHeading eyebrow={eyebrow} title={title} description={description} />
       <div className="mt-10">
         <EditorialGrid columns={4}>
@@ -117,7 +118,7 @@ export default function WeddingsHub() {
         items={weddingDecor}
       />
 
-      <section id="planning" className="bg-neutral px-6 py-20">
+      <section id="planning" className="scroll-mt-36 bg-neutral px-6 py-20">
         <div className="mx-auto max-w-7xl">
           <SectionHeading eyebrow="Wedding Planning" title="We plan the wedding, not just the décor." />
           <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-3">
@@ -131,7 +132,7 @@ export default function WeddingsHub() {
         </div>
       </section>
 
-      <section id="real-weddings" className="mx-auto max-w-3xl px-6 py-20 text-center">
+      <section id="real-weddings" className="mx-auto max-w-3xl scroll-mt-36 px-6 py-20 text-center">
         <SectionHeading
           eyebrow="Real weddings"
           title="Coming soon, honestly."
@@ -139,7 +140,7 @@ export default function WeddingsHub() {
           align="center"
         />
         <a
-          href="https://www.instagram.com/nextlevelevents.in"
+          href={SOCIALS.instagram}
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 inline-block text-gold underline"

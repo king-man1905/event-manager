@@ -6,6 +6,7 @@ import { culturalWeddings } from '../data/culturalWeddings';
 import { weddingFunctions } from '../data/weddingFunctions';
 import { weddingExperiences } from '../data/weddingExperiences';
 import { weddingDecor } from '../data/weddingDecor';
+import { SOCIALS } from '../data/contact';
 
 // Scoping by each section's own container (rather than matching link accessible
 // names) avoids false negatives from label substrings colliding across layers —
@@ -57,7 +58,7 @@ describe('WeddingsHub', () => {
     expect(screen.getByText('Catering & Hospitality')).toBeInTheDocument();
     expect(screen.getByText('Full-Day Execution')).toBeInTheDocument();
     const instaLink = screen.getByRole('link', { name: /Instagram/i });
-    expect(instaLink).toHaveAttribute('href', 'https://www.instagram.com/nextlevelevents.in');
+    expect(instaLink).toHaveAttribute('href', SOCIALS.instagram);
   });
 
   it('renders a working WhatsApp CTA in the hero', () => {
