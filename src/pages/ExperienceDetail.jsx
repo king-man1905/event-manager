@@ -23,7 +23,7 @@ const LAYERS = {
   experiences: {
     label: 'Wedding Experiences',
     data: weddingExperiences,
-    message: (item) => `Hi, I'm interested in ${item.label} for my wedding in Ranchi.`,
+    message: (item) => `Hi, I'd like to book ${item.label} for my wedding in Ranchi.`,
   },
   decor: {
     label: 'Wedding Décor',
