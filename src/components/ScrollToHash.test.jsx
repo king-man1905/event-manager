@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import ScrollToHash from './ScrollToHash';
@@ -7,6 +7,10 @@ describe('ScrollToHash', () => {
   beforeEach(() => {
     // jsdom does not implement scrollIntoView; stub it so we can assert on it.
     window.HTMLElement.prototype.scrollIntoView = vi.fn();
+  });
+
+  afterEach(() => {
+    delete window.HTMLElement.prototype.scrollIntoView;
   });
 
   it('scrolls the element matching the URL hash into view', () => {

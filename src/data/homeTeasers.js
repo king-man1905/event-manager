@@ -11,11 +11,11 @@ export const homeTeasers = [
   },
   {
     id: 'real-events',
-    imageId: 'vertical-decor',
+    imageId: 'vertical-social',
     eyebrow: 'Real events, real moments',
     title: 'Our real work, coming to this page soon.',
     description:
-      'A filterable gallery of genuine Next Level Events work is being built next — no stock photography, no fabricated reviews.',
+      'A filterable gallery of genuine Next Level Events work — weddings, décor, celebrations — is being built next, with real work only, no fabricated reviews.',
     ctaLabel: 'Talk to Us Meanwhile',
     href: '/#contact',
   },
@@ -41,7 +41,7 @@ export const homeTeasers = [
   },
   {
     id: 'behind-the-event',
-    imageId: 'vertical-entertainment',
+    imageId: 'vertical-corporate',
     eyebrow: 'Behind the event',
     title: 'The planning you never see on the day.',
     description:
@@ -61,7 +61,7 @@ export const homeTeasers = [
   },
   {
     id: 'social-video',
-    imageId: 'vertical-social',
+    imageId: 'vertical-entertainment',
     eyebrow: 'On Instagram & YouTube',
     title: 'Follow the real work as it happens.',
     description: 'Reels, films and behind-the-scenes footage from real Next Level Events celebrations.',

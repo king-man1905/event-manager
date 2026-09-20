@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        charcoal: 'var(--color-charcoal)',
-        ivory: 'var(--color-ivory)',
-        neutral: 'var(--color-neutral)',
-        gold: 'var(--color-gold)',
+        charcoal: '#1c1a17',
+        ivory: '#faf6ef',
+        neutral: '#ece4d3',
+        gold: '#c19743',
       },
       fontFamily: {
         display: ['"Cormorant Garamond"', 'serif'],

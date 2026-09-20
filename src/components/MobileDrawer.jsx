@@ -7,7 +7,7 @@ export default function MobileDrawer({ items, isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-30 bg-ivory lg:hidden">
+    <div className="fixed inset-0 z-30 overflow-y-auto bg-ivory lg:hidden">
       <div className="flex justify-end p-4">
         <button type="button" onClick={onClose} aria-label="Close menu" className="text-charcoal">
           Close

@@ -13,4 +13,12 @@ describe('Footer', () => {
     expect(screen.getByRole('link', { name: 'YouTube' })).toHaveAttribute('href', SOCIALS.youtube);
     expect(screen.getAllByRole('link', { name: /Ranchi/ })[0]).toHaveAttribute('href', MAP_URL);
   });
+
+  it('renders visible attribution for every CC-licensed image', () => {
+    render(<Footer />);
+    expect(screen.getByText('Image Credits')).toBeInTheDocument();
+    expect(
+      screen.getByText(/Imakanksha.*CC BY-SA 4\.0/)
+    ).toBeInTheDocument();
+  });
 });

@@ -1,5 +1,14 @@
 import { PHONE_DISPLAY, PHONE_TEL, EMAIL, ADDRESS, MAP_URL, SOCIALS } from '../data/contact';
 import logo from '../assets/brand/logo.png';
+import manifest from '../assets/manifest.json';
+
+const imageCredits = [
+  ...new Set(
+    Object.values(manifest)
+      .filter((image) => image.license.startsWith('CC'))
+      .map((image) => `${image.source} (${image.license})`)
+  ),
+];
 
 export default function Footer() {
   return (
@@ -49,6 +58,16 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+      {imageCredits.length > 0 && (
+        <div className="mx-auto mt-12 max-w-7xl border-t border-ivory/10 pt-6">
+          <p className="text-xs uppercase tracking-widest text-ivory/40">Image Credits</p>
+          <ul className="mt-2 space-y-1 text-xs text-ivory/50">
+            {imageCredits.map((credit) => (
+              <li key={credit}>{credit}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </footer>
   );
 }

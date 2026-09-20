@@ -1,17 +1,19 @@
 {
   "hero-home": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Indian_bride_and_groom.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Indian_bride_and_groom.jpg/960px-Indian_bride_and_groom.jpg",
     "source": "Wikimedia Commons — Imakanksha, \"Indian bride and groom\"",
     "license": "CC BY-SA 4.0",
     "altText": "An Indian bride and groom in traditional wedding attire holding hands on a gold-decorated mandap stage",
-    "status": "placeholder"
+    "status": "placeholder",
+    "note": "Real Indian wedding — mandap stage, traditional lehenga/sherwani, floral garlands. Used as the sitewide brand hero."
   },
   "vertical-weddings": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Indian_Wedding_Mandap.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Indian_Wedding_Mandap.jpg/1280px-Indian_Wedding_Mandap.jpg",
     "source": "Wikimedia Commons — Wikilover90, \"Indian Wedding Mandap\"",
     "license": "CC BY-SA 4.0",
     "altText": "A floral-decorated Indian wedding mandap with a priest performing rituals",
-    "status": "placeholder"
+    "status": "placeholder",
+    "note": "Real Indian wedding mandap with a priest performing rituals — matches the Weddings vertical directly."
   },
   "vertical-corporate": {
     "url": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80",
@@ -25,7 +27,8 @@
     "source": "Unsplash",
     "license": "Unsplash License",
     "altText": "An elegant banquet hall set with round tables, gold chairs and chandeliers for a private celebration",
-    "status": "placeholder"
+    "status": "placeholder",
+    "note": "Generic Western banquet hall, not culturally Indian — placeholder pending real Indian social-celebration photography in a later phase. Do not treat as a cultural match."
   },
   "vertical-kids-family": {
     "url": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80",
@@ -35,31 +38,35 @@
     "status": "placeholder"
   },
   "vertical-entertainment": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/A_Vibrant_Bharatanatyam_Group_Interpretation.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/A_Vibrant_Bharatanatyam_Group_Interpretation.jpg/1280px-A_Vibrant_Bharatanatyam_Group_Interpretation.jpg",
     "source": "Wikimedia Commons — Mohd Zishan, \"A Vibrant Bharatanatyam Group Interpretation\"",
     "license": "CC BY-SA 4.0",
     "altText": "Four dancers in traditional Bharatanatyam costume performing on a dark stage",
-    "status": "placeholder"
+    "status": "placeholder",
+    "note": "Bharatanatyam, a classical South Indian dance form, performed on stage — matches Indian live-entertainment context."
   },
   "vertical-decor": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Indian_Wedding_Mandap_Decoration.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Indian_Wedding_Mandap_Decoration.jpg/1280px-Indian_Wedding_Mandap_Decoration.jpg",
     "source": "Wikimedia Commons — Wikilover90, \"Indian Wedding Mandap Decoration\"",
     "license": "CC BY-SA 4.0",
     "altText": "Close-up of an Indian wedding mandap decorated with white and pink floral garlands and gold carving",
-    "status": "placeholder"
+    "status": "placeholder",
+    "note": "Close-up of the same real Indian wedding mandap's floral/gold decoration — matches Décor & Design and wedding-décor context."
   },
   "vertical-cultural": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Diyas_Diwali_Decor_India.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Diyas_Diwali_Decor_India.jpg/1280px-Diyas_Diwali_Decor_India.jpg",
     "source": "Wikimedia Commons via Flickr — humdingor, \"Diwali Decor\"",
     "license": "CC BY-SA 2.0",
     "altText": "Rows of lit clay diyas arranged on the floor beneath a silver tray of floating flowers and candles for Diwali",
-    "status": "placeholder"
+    "status": "placeholder",
+    "note": "Lit clay diyas and a floating-flower tray — a genuine Diwali decoration setup, matches Special & Cultural festivals."
   },
   "vertical-destination": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Umaid_Bhawan%2C_Jodhpur.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Umaid_Bhawan%2C_Jodhpur.jpg/1280px-Umaid_Bhawan%2C_Jodhpur.jpg",
     "source": "Wikimedia Commons — Yann, \"Umaid Bhawan, Jodhpur\"",
     "license": "CC BY-SA 4.0",
     "altText": "Umaid Bhawan Palace in Jodhpur, Rajasthan, a sandstone palace with a large central dome",
-    "status": "placeholder"
+    "status": "placeholder",
+    "note": "Umaid Bhawan Palace, Jodhpur, Rajasthan — a real, iconic Indian destination-wedding venue."
   }
 }
