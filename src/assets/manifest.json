@@ -230,5 +230,223 @@
     "license": "CC BY-SA 4.0",
     "altText": "A decorated indoor floral wall backdrop with hanging bells and pink drapery at a pre-wedding function",
     "status": "placeholder-lower-resolution — 720x1280 original, will read softer than other entries at large display sizes"
+  },
+  "corporate-product-launch": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Geneva_International_Motor_Show_2018%2C_Le_Grand-Saconnex_%281X7A0269%29.jpg/1280px-Geneva_International_Motor_Show_2018%2C_Le_Grand-Saconnex_%281X7A0269%29.jpg",
+    "source": "Wikimedia Commons — Matti Blume, \"Geneva International Motor Show 2018, Le Grand-Saconnex\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A cylindrical curtained car-reveal stage bathed in dramatic purple light, moments before a branded product unveiling",
+    "status": "placeholder"
+  },
+  "corporate-conferences": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Saroj_Ghose_Addressing_-_Strategic_Transformations_-_Museums_in_21st_Century_-_International_Conference_and_Seminar_-_Kolkata_2014-02-14_3014.JPG/1280px-Saroj_Ghose_Addressing_-_Strategic_Transformations_-_Museums_in_21st_Century_-_International_Conference_and_Seminar_-_Kolkata_2014-02-14_3014.JPG",
+    "source": "Wikimedia Commons — Biswarup Ganguly, \"Saroj Ghose Addressing - International Conference and Seminar, Kolkata\"",
+    "license": "CC BY 3.0",
+    "altText": "A full conference auditorium in session with a speaker at the podium, a presentation screen, and rows of attentive attendees",
+    "status": "placeholder"
+  },
+  "corporate-annual-function": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/DZ6_0468_Spacious_elegantly_lit_banquet_hall_set_up_with_rows_of_white-covered_chairs_facing_a_stage_ready_for_a_large_conference_or_formal_event.jpg/1280px-DZ6_0468_Spacious_elegantly_lit_banquet_hall_set_up_with_rows_of_white-covered_chairs_facing_a_stage_ready_for_a_large_conference_or_formal_event.jpg",
+    "source": "Wikimedia Commons — PattayaPatrol, \"Spacious elegantly lit banquet hall set up for a large formal event\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A high-ceilinged ballroom with chandeliers, rows of white-draped chairs and a stage, set up for a large company function",
+    "status": "placeholder"
+  },
+  "corporate-decor-branding": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Asia_Smart_App_Awards_2019.jpg/1280px-Asia_Smart_App_Awards_2019.jpg",
+    "source": "Wikimedia Commons — KylieChann, \"Asia Smart App Awards 2019\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A large branded event backdrop screen displaying the event name and multiple sponsor logos, with award winners posed in front",
+    "status": "placeholder"
+  },
+  "corporate-award-night": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Salman_F_Rahman_speaking_at_FBCCI_Business_Excellence_Award_2023_in_Dhaka_2023-03-13_%28PID-0017275%29.jpg/1280px-Salman_F_Rahman_speaking_at_FBCCI_Business_Excellence_Award_2023_in_Dhaka_2023-03-13_%28PID-0017275%29.jpg",
+    "source": "Wikimedia Commons — Press Information Department, Bangladesh, \"FBCCI Business Excellence Award 2023\"",
+    "license": "Public Domain",
+    "altText": "A speaker at a lectern in front of a vivid branded business award ceremony stage backdrop",
+    "status": "placeholder"
+  },
+  "corporate-stage-production": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/A_Photo_of_the_LDI_2013_Conference_in_Las_Vegas%2C_NV.jpg/1280px-A_Photo_of_the_LDI_2013_Conference_in_Las_Vegas%2C_NV.jpg",
+    "source": "Wikimedia Commons — Lumenbuddha, \"LDI 2013 Conference, Las Vegas\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A dramatic overhead lighting truss rig with dozens of moving-head fixtures and cross-beaming light shafts at a stage-production display",
+    "status": "placeholder"
+  },
+  "social-anniversary": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/DZ6_2628_Cozy_candlelit_dinner_for_two_elegant_Thai_restaurant_setting_with_twinkling_lights_and_a_delicate_orchid_centerpiece.jpg/1280px-DZ6_2628_Cozy_candlelit_dinner_for_two_elegant_Thai_restaurant_setting_with_twinkling_lights_and_a_delicate_orchid_centerpiece.jpg",
+    "source": "Wikimedia Commons — PattayaPatrol, \"Cozy candlelit dinner for two\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "An elegant table set for two with wine glasses, an orchid centerpiece and warm candlelight for an anniversary dinner",
+    "status": "placeholder"
+  },
+  "social-milestone-jubilee": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Goan_style_celebration_of_a_50th_wedding_anniversary_%2833060%29.jpg/1280px-Goan_style_celebration_of_a_50th_wedding_anniversary_%2833060%29.jpg",
+    "source": "Wikimedia Commons — Fredericknoronha, \"Goan style celebration of a 50th wedding anniversary\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A decorated hall in Goa with a floral arch backdrop and a banner celebrating a 50th wedding anniversary",
+    "status": "placeholder"
+  },
+  "social-private-party": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Friends_and_family_gather_to_celebrate_a_woman_reaching_her_50th_birthday.jpg/1280px-Friends_and_family_gather_to_celebrate_a_woman_reaching_her_50th_birthday.jpg",
+    "source": "Wikimedia Commons — Shixart1985, \"Friends and family gather to celebrate a woman reaching her 50th birthday\"",
+    "license": "CC BY 2.0",
+    "altText": "A woman smiling behind a birthday cake surrounded by family at an intimate private celebration",
+    "status": "placeholder"
+  },
+  "social-housewarming": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/A_Ganesh_Puja_inside_a_home%2C_Rourkela_Eastern_India_2012.jpg/1280px-A_Ganesh_Puja_inside_a_home%2C_Rourkela_Eastern_India_2012.jpg",
+    "source": "Wikimedia Commons — Sadasiv Swain, \"A Ganesh Puja inside a home, Rourkela\"",
+    "license": "CC BY 2.0",
+    "altText": "A priest performing a home puja with a Ganesh idol and rangoli, with family seated around, for a housewarming ceremony",
+    "status": "placeholder"
+  },
+  "social-bachelor-party": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bachelorette_party%2C_Canandaigua%2C_NY%2C_May_2014.jpg/1280px-Bachelorette_party%2C_Canandaigua%2C_NY%2C_May_2014.jpg",
+    "source": "Wikimedia Commons — Daniel Case, \"Bachelorette party, Canandaigua, NY\"",
+    "license": "CC BY-SA 3.0",
+    "altText": "A bride-to-be and her group of friends gathered outdoors for a bachelorette party celebration",
+    "status": "placeholder"
+  },
+  "kids-balloon-decor": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Birthday_party_decoration.jpg/1280px-Birthday_party_decoration.jpg",
+    "source": "Wikimedia Commons — Abinayasekar357, \"Birthday party decoration\"",
+    "license": "CC0",
+    "altText": "A wall decorated with a Happy Birthday banner, colourful balloon clusters and paper garlands for a kids' party",
+    "status": "placeholder"
+  },
+  "kids-naming-ceremony": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Baby_Naming_ceremony_in_Tulu_Gowda_Community_of_Tulunadu_1.jpg/1280px-Baby_Naming_ceremony_in_Tulu_Gowda_Community_of_Tulunadu_1.jpg",
+    "source": "Wikimedia Commons — Bharathesha Alasandemajalu, \"Baby Naming ceremony in Tulu Gowda Community of Tulunadu\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A sleeping baby in a decorated ceremonial cradle framed with fresh flower garlands and pastel balloons for a naming ceremony",
+    "status": "placeholder"
+  },
+  "kids-annaprashan": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/AnnaPrashan_%28Anna_Prashan%29_-_Hindu_First_Rice_Eating_Ceremony.JPG/1280px-AnnaPrashan_%28Anna_Prashan%29_-_Hindu_First_Rice_Eating_Ceremony.JPG",
+    "source": "Wikimedia Commons — Nauzer, \"AnnaPrashan - Hindu First Rice Eating Ceremony\"",
+    "license": "Public Domain",
+    "altText": "A grandfather feeding a baby dressed in yellow with a peacock-feather headpiece at an Annaprashan ceremony",
+    "status": "placeholder"
+  },
+  "entertainment-sfx": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Smoke_and_light_beams_%28Unsplash%29.jpg/1280px-Smoke_and_light_beams_%28Unsplash%29.jpg",
+    "source": "Wikimedia Commons — Daniel Robert, \"Smoke and light beams\"",
+    "license": "CC0",
+    "altText": "A concert stage with dramatic light beams cutting through theatrical smoke and a silhouetted crowd",
+    "status": "placeholder"
+  },
+  "entertainment-performers": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Formational_dance_performance.jpg/1280px-Formational_dance_performance.jpg",
+    "source": "Wikimedia Commons — Siddharth 36, \"Formational dance performance\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A large troupe of folk dancers in traditional costume performing an elaborate stage formation under professional lighting",
+    "status": "placeholder"
+  },
+  "entertainment-anchor": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Anchor_Girish_Sharma_at_Dandiya_Event.jpg/500px-Anchor_Girish_Sharma_at_Dandiya_Event.jpg",
+    "source": "Wikimedia Commons — Girish Sharma, \"Anchor Girish Sharma at Dandiya Event\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A professional event anchor in traditional attire standing on stage at an Indian event, stage equipment visible behind him",
+    "status": "placeholder"
+  },
+  "entertainment-dj": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Vagator%2C_Goa%2C_India%2C_DJ_playing_music_on_turntable.jpg/1280px-Vagator%2C_Goa%2C_India%2C_DJ_playing_music_on_turntable.jpg",
+    "source": "Wikimedia Commons — Vyacheslav Argenberg, \"DJ playing music on turntable, Vagator, Goa\"",
+    "license": "CC BY 4.0",
+    "altText": "Close-up of a DJ's hands mixing on a turntable at a night event with warm ambient lighting",
+    "status": "placeholder"
+  },
+  "entertainment-photography": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Photographer_at_an_event_in_Goa%2CIndia.jpg/1280px-Photographer_at_an_event_in_Goa%2CIndia.jpg",
+    "source": "Wikimedia Commons — Frederick Noronha, \"Photographer at an event in Goa, India\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A videographer operating a broadcast camera on a tripod at a large conference-style event",
+    "status": "placeholder"
+  },
+  "entertainment-kids": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Capital_Area_Food_Bank_2024_Summer_Meals_for_Kids_Kick_Off_%2820240708-USDA-FNS-PAS-1011%29.jpg/1280px-Capital_Area_Food_Bank_2024_Summer_Meals_for_Kids_Kick_Off_%2820240708-USDA-FNS-PAS-1011%29.jpg",
+    "source": "Wikimedia Commons — USDA, photo by Paul Sale",
+    "license": "Public Domain",
+    "altText": "A volunteer face-painting a young girl's arm at an outdoor family event",
+    "status": "placeholder"
+  },
+  "decor-balloon": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ayakl%C4%B1_Tak_Balon_S%C3%BCsleme_Uygulama_%C3%96rne%C4%9Fi.jpg/1280px-Ayakl%C4%B1_Tak_Balon_S%C3%BCsleme_Uygulama_%C3%96rne%C4%9Fi.jpg",
+    "source": "Wikimedia Commons — Cihan52, \"Balloon Arch Decoration Application Example\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A tall purple-and-white balloon arch framing a doorway in an elegant banquet-hall interior",
+    "status": "placeholder"
+  },
+  "decor-floral": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Legant_table_setting_with_white_floral_centerpiece.jpg/1280px-Legant_table_setting_with_white_floral_centerpiece.jpg",
+    "source": "Wikimedia Commons — Bhullargraphic, photo by DP Singh Bhullar, \"Elegant table setting with white floral centerpiece\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A richly detailed floral centerpiece of orchids, peonies and roses along an elegantly set dinner table",
+    "status": "placeholder"
+  },
+  "decor-stage-backdrop": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/View_of_Stage_2012_Baldrige_Award_Ceremony_%288717793078%29.jpg/1280px-View_of_Stage_2012_Baldrige_Award_Ceremony_%288717793078%29.jpg",
+    "source": "Wikimedia Commons — National Institute of Standards and Technology, photo by Eddie Arrossi",
+    "license": "Public Domain",
+    "altText": "A professionally designed awards-ceremony stage with deep-blue drapery, uplighting and a podium",
+    "status": "placeholder"
+  },
+  "decor-lighting": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Platinum_Banjara_Lobby.jpg/1280px-Platinum_Banjara_Lobby.jpg",
+    "source": "Wikimedia Commons — Banquets Banjara, \"Platinum Banjara Lobby\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A banquet-hall lobby with a large crystal chandelier and cove lighting as the centrepiece",
+    "status": "placeholder"
+  },
+  "decor-venue-styling": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/WTTC_-_2JB00035-798_%2854822091136%29.jpg/1280px-WTTC_-_2JB00035-798_%2854822091136%29.jpg",
+    "source": "Wikimedia Commons — World Travel & Tourism Council, \"WTTC Global Summit 2025 gala dinner\"",
+    "license": "CC BY 4.0",
+    "altText": "An elegant gala-dinner table setting with crystal glassware and gold napkins at a summit gala dinner",
+    "status": "placeholder"
+  },
+  "cultural-diwali": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/The_Rangoli_of_Lights.jpg/1280px-The_Rangoli_of_Lights.jpg",
+    "source": "Wikimedia Commons — Subharnab Majumdar, \"The Rangoli of Lights\"",
+    "license": "CC BY 2.0",
+    "altText": "An ornate diamond-patterned rangoli surrounded by lit diyas and a floral bowl for Diwali",
+    "status": "placeholder"
+  },
+  "cultural-navratri": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Navratri_Ground_Decoration.jpg/1280px-Navratri_Ground_Decoration.jpg",
+    "source": "Wikimedia Commons — Nitinbaldha, \"Navratri Ground Decoration\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A night-time Garba ground radiating strands of festoon lights from a decorated central stage",
+    "status": "placeholder"
+  },
+  "cultural-holi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Colorfull_Heads.jpg/1280px-Colorfull_Heads.jpg",
+    "source": "Wikimedia Commons — Chitrapeti, \"Colorfull Heads\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A vivid crowd shot of people covered in bright coloured powder during Holi celebrations",
+    "status": "placeholder"
+  },
+  "cultural-religious-general": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Ganeshotsav_2015%2C_Gol_Circle_Mitra_Mandal.JPG/1280px-Ganeshotsav_2015%2C_Gol_Circle_Mitra_Mandal.JPG",
+    "source": "Wikimedia Commons — Dharmadhyaksha, \"Ganeshotsav 2015, Gol Circle Mitra Mandal\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "An elaborately illuminated temple-styled festival pandal gateway at night during Ganesh Chaturthi",
+    "status": "placeholder"
+  },
+  "destination-corporate-retreat": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Golden_Palm_Resort_%285067102270%29.jpg/1280px-Golden_Palm_Resort_%285067102270%29.jpg",
+    "source": "Wikimedia Commons — Ashwin Kumar, \"Golden Palm Resort\"",
+    "license": "CC BY-SA 2.0",
+    "altText": "A scenic resort pool and palm-lined garden used for a company team outing near Bangalore",
+    "status": "placeholder"
+  },
+  "destination-celebration": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/ARKbar_Beach_Club_2023_IMG20230410000855_w2048.jpg/1280px-ARKbar_Beach_Club_2023_IMG20230410000855_w2048.jpg",
+    "source": "Wikimedia Commons — Per Meistrup, \"Beach club celebration, Koh Samui\"",
+    "license": "CC BY-SA 4.0",
+    "altText": "A night-time poolside celebration at a beach resort with festive string lights and coloured uplighting",
+    "status": "placeholder",
+    "note": "Original photo shows a specific beach venue's own signage in the background; alt text intentionally describes the scene generically rather than naming that unrelated business."
   }
 }
