@@ -67,4 +67,18 @@ describe('VerticalExperienceDetail', () => {
     renderAt('/events/corporate-events/not-a-real-slug');
     expect(screen.getByText(/couldn't find/i)).toBeInTheDocument();
   });
+
+  it('gives image-less full-depth siblings distinct gallery rotations instead of an identical set', () => {
+    const first = renderAt('/events/kids-family/kids-birthday-themes');
+    const firstGallery = within(first.container).getByTestId('gallery');
+    const firstAlts = within(firstGallery).getAllByRole('img').map((img) => img.getAttribute('alt'));
+    first.unmount();
+
+    const second = renderAt('/events/kids-family/milestone-birthdays');
+    const secondGallery = within(second.container).getByTestId('gallery');
+    const secondAlts = within(secondGallery).getAllByRole('img').map((img) => img.getAttribute('alt'));
+    second.unmount();
+
+    expect(firstAlts).not.toEqual(secondAlts);
+  });
 });

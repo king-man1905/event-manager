@@ -81,7 +81,11 @@ export default function VerticalExperienceDetail() {
 
   const allWithImage = verticalConfig.data.filter((entry) => entry.imageId);
   const siblingsWithImage = allWithImage.filter((entry) => entry.slug !== item.slug);
-  const myIndex = Math.max(0, allWithImage.findIndex((entry) => entry.slug === item.slug));
+  const ownIndexInImages = allWithImage.findIndex((entry) => entry.slug === item.slug);
+  const noImageEntries = verticalConfig.data.filter((entry) => !entry.imageId);
+  const myIndex = ownIndexInImages >= 0
+    ? ownIndexInImages
+    : noImageEntries.findIndex((entry) => entry.slug === item.slug);
   const rotatedSiblings = pickRotated(siblingsWithImage, myIndex, 2);
   const galleryEntries = item.depth === 'full'
     ? [
