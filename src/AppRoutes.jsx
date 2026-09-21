@@ -3,6 +3,8 @@ import Home from './pages/Home';
 import EventCategoryStub from './pages/EventCategoryStub';
 import WeddingsHub from './pages/WeddingsHub';
 import ExperienceDetail from './pages/ExperienceDetail';
+import VerticalHub from './pages/VerticalHub';
+import VerticalExperienceDetail from './pages/VerticalExperienceDetail';
 
 export default function AppRoutes() {
   return (
@@ -10,7 +12,8 @@ export default function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/events/weddings" element={<WeddingsHub />} />
       <Route path="/events/weddings/:layer/:slug" element={<ExperienceDetail />} />
-      <Route path="/events/:slug" element={<EventCategoryStub />} />
+      <Route path="/events/:vertical/:slug" element={<VerticalExperienceDetail />} />
+      <Route path="/events/:slug" element={<VerticalHub />} />
       <Route path="*" element={<EventCategoryStub />} />
     </Routes>
   );

@@ -4,13 +4,43 @@ import { MemoryRouter } from 'react-router-dom';
 import AppRoutes from './AppRoutes';
 
 describe('AppRoutes', () => {
-  it('routes /events/:slug to the category stub', () => {
-    render(
+  it('routes /events/corporate-events to VerticalHub with a real experience grid', () => {
+    const { container } = render(
       <MemoryRouter initialEntries={['/events/corporate-events']}>
         <AppRoutes />
       </MemoryRouter>
     );
     expect(screen.getByRole('heading', { name: 'Corporate Events' })).toBeInTheDocument();
+    expect(container.querySelector('a[href^="/events/corporate-events/"]')).toBeInTheDocument();
+  });
+
+  it('routes /events/:vertical/:slug to VerticalExperienceDetail', () => {
+    render(
+      <MemoryRouter initialEntries={['/events/kids-family/baby-shower']}>
+        <AppRoutes />
+      </MemoryRouter>
+    );
+    expect(screen.getByRole('heading', { name: 'Baby Shower' })).toBeInTheDocument();
+  });
+
+  it('still routes Weddings exactly as Phase 2 shipped it, unaffected by the vertical retarget', () => {
+    render(
+      <MemoryRouter initialEntries={['/events/weddings']}>
+        <AppRoutes />
+      </MemoryRouter>
+    );
+    expect(
+      screen.getByRole('heading', { name: /Weddings, planned as one continuous story/i })
+    ).toBeInTheDocument();
+  });
+
+  it('still routes a Weddings sub-experience exactly as Phase 2 shipped it', () => {
+    render(
+      <MemoryRouter initialEntries={['/events/weddings/cultural/punjabi']}>
+        <AppRoutes />
+      </MemoryRouter>
+    );
+    expect(screen.getByRole('heading', { name: 'Punjabi' })).toBeInTheDocument();
   });
 
   it('routes /events/weddings to WeddingsHub, not the generic EventCategoryStub', () => {
