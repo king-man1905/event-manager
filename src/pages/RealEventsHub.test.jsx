@@ -12,10 +12,13 @@ describe('RealEventsHub', () => {
     expect(screen.getByRole('heading', { name: 'Real work, as it happens.' })).toBeInTheDocument();
   });
 
-  it('renders all 5 real videos as click-to-load embeds', () => {
+  it('renders all 5 real videos as click-to-load embeds, one per real video id', () => {
     render(<RealEventsHub />);
+    expect(screen.getAllByRole('button', { name: /^Play / })).toHaveLength(socialContent.length);
     socialContent.forEach((item) => {
-      expect(screen.getAllByRole('button', { name: `Play ${item.label}` }).length).toBeGreaterThan(0);
+      expect(
+        document.querySelector(`img[src="https://i.ytimg.com/vi/${item.videoId}/hqdefault.jpg"]`)
+      ).toBeTruthy();
     });
   });
 

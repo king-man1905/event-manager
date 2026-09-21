@@ -22,4 +22,11 @@ describe('homeTeasers', () => {
     expect(new Set(titles).size).toBe(titles.length);
     expect(new Set(descriptions).size).toBe(descriptions.length);
   });
+
+  it('has the 3 Phase 4 teasers pointing at their real destinations', () => {
+    const byId = Object.fromEntries(homeTeasers.map((t) => [t.id, t]));
+    expect(byId['real-events'].href).toBe('/real-events');
+    expect(byId['behind-the-event'].href).toBe('/real-events#behind-the-event');
+    expect(byId['social-video'].href).toBe('/real-events');
+  });
 });

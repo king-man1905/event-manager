@@ -2,7 +2,6 @@ import SectionHeading from '../components/SectionHeading';
 import WhatsAppCTA from '../components/WhatsAppCTA';
 import VideoEmbed from '../components/realEvents/VideoEmbed';
 import { usePageMeta } from '../hooks/usePageMeta';
-import { getImage } from '../data/images';
 import { socialContent } from '../data/socialContent';
 import { behindTheEventCategories } from '../data/behindTheEvent';
 import { SOCIALS } from '../data/contact';
@@ -14,12 +13,16 @@ export default function RealEventsHub() {
       'Real videos and a real look at the planning behind Next Level Events celebrations in Ranchi — verified work only, no fabricated reviews.',
   });
 
-  const hero = getImage('vertical-social');
+  const heroVideoId = 'H7EhkKuHGWU'; // real, verified Wedding Décor Reel — used as this page's hero frame
+  const heroImage = {
+    url: `https://i.ytimg.com/vi/${heroVideoId}/maxresdefault.jpg`,
+    altText: 'A still frame from a real Next Level Events wedding décor video',
+  };
 
   return (
     <div>
       <div className="relative h-[45vh] min-h-[320px] w-full overflow-hidden">
-        <img src={hero.url} alt={hero.altText} className="h-full w-full object-cover" />
+        <img src={heroImage.url} alt={heroImage.altText} className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-charcoal/50" />
         <div className="absolute inset-0 flex flex-col items-start justify-end px-6 pb-10 text-ivory md:px-16">
           <p className="text-sm uppercase tracking-[0.2em] text-gold">Real events, real moments</p>
@@ -40,7 +43,7 @@ export default function RealEventsHub() {
         </div>
       </div>
 
-      <div id="behind-the-event" className="mx-auto max-w-5xl px-6 py-16">
+      <div id="behind-the-event" className="mx-auto max-w-5xl px-6 py-16 scroll-mt-36">
         <SectionHeading
           eyebrow="Behind the event"
           title="The planning you don't see on the day."
