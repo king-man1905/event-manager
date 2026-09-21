@@ -15,11 +15,11 @@ export const homeTeasers = [
     id: 'real-events',
     imageId: 'vertical-social',
     eyebrow: 'Real events, real moments',
-    title: 'Our real work, coming to this page soon.',
+    title: 'See the real work behind the plans.',
     description:
-      'A filterable gallery of genuine Next Level Events work — weddings, décor, celebrations — is being built next, with real work only, no fabricated reviews.',
-    ctaLabel: 'Talk to Us Meanwhile',
-    href: '/#contact',
+      'Real videos from real Next Level Events celebrations — plus a look at the planning that happens before the event.',
+    ctaLabel: 'See Real Events',
+    href: '/real-events',
   },
   {
     id: 'inspiration',
@@ -47,9 +47,9 @@ export const homeTeasers = [
     eyebrow: 'Behind the event',
     title: 'The planning you never see on the day.',
     description:
-      'Site recce, setup and execution — the real process behind the celebration — arrives in a later phase.',
-    ctaLabel: 'How We Work',
-    href: '/#how-we-work',
+      'Site recce, client meetings and special-entry setup — a real look at our process, from our own Instagram.',
+    ctaLabel: 'See Behind the Event',
+    href: '/real-events#behind-the-event',
   },
   {
     id: 'locations',
@@ -66,8 +66,9 @@ export const homeTeasers = [
     imageId: 'vertical-entertainment',
     eyebrow: 'On Instagram & YouTube',
     title: 'Follow the real work as it happens.',
-    description: 'Reels, films and behind-the-scenes footage from real Next Level Events celebrations.',
-    ctaLabel: 'Follow on Instagram',
-    href: SOCIALS.instagram,
+    description:
+      'Real reels and videos from Next Level Events celebrations, plus more on Instagram, YouTube and Facebook.',
+    ctaLabel: 'Watch Real Events',
+    href: '/real-events',
   },
 ];

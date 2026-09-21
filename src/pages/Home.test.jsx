@@ -21,7 +21,7 @@ describe('Home', () => {
       'A Ranchi studio built around one idea: your event, done properly.', // BrandIntro
       'Every kind of celebration, one team.', // EventDiscovery
       'Weddings, planned as one continuous story.', // Weddings flagship teaser
-      'Our real work, coming to this page soon.', // Real Events teaser
+      'See the real work behind the plans.', // Real Events teaser
       'Ideas for every ritual and celebration.', // Inspiration teaser
       'We plan the event, not just the décor.', // ServicesCapabilities
       'From bare venue to finished celebration.', // Transformation teaser
