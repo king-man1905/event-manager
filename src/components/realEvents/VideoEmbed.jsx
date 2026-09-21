@@ -6,7 +6,7 @@ export default function VideoEmbed({ videoId, label }) {
 
   if (isLoaded) {
     return (
-      <div className="aspect-video w-full overflow-hidden rounded bg-charcoal">
+      <div className="aspect-[9/16] w-full overflow-hidden rounded bg-charcoal">
         <iframe
           src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
           title={label}
@@ -23,7 +23,7 @@ export default function VideoEmbed({ videoId, label }) {
       type="button"
       onClick={() => setIsLoaded(true)}
       aria-label={`Play ${label}`}
-      className="group relative aspect-video w-full overflow-hidden rounded bg-charcoal"
+      className="group relative aspect-[9/16] w-full overflow-hidden rounded bg-charcoal"
     >
       <img
         src={thumbnailUrl}

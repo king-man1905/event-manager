@@ -36,7 +36,7 @@ export default function RealEventsHub() {
           title="Real videos from real celebrations."
           description="Straight from our own YouTube channel — click any video to play it."
         />
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-5">
           {socialContent.map((item) => (
             <VideoEmbed key={item.id} videoId={item.videoId} label={item.label} />
           ))}
