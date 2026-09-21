@@ -69,4 +69,13 @@ describe('AppRoutes', () => {
     );
     expect(screen.getByRole('heading', { name: 'Corporate Events' })).toBeInTheDocument();
   });
+
+  it('routes /real-events to RealEventsHub', () => {
+    render(
+      <MemoryRouter initialEntries={['/real-events']}>
+        <AppRoutes />
+      </MemoryRouter>
+    );
+    expect(screen.getByRole('heading', { name: 'Real work, as it happens.' })).toBeInTheDocument();
+  });
 });

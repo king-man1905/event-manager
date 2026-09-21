@@ -11,5 +11,6 @@ export const nav = [
       },
     ],
   },
+  { label: 'Real Events', href: '/real-events' },
   { label: 'Contact', href: '/#contact' },
 ];
