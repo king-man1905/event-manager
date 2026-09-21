@@ -1,8 +1,11 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
-import VerticalHub from './VerticalHub';
+import VerticalHub, { VERTICALS } from './VerticalHub';
 import { corporateEvents } from '../data/corporateEvents';
+import { events } from '../data/events';
+
+const nonWeddingSlugs = events.filter((e) => e.slug !== 'weddings').map((e) => e.slug);
 
 function renderAt(path) {
   return render(
@@ -34,5 +37,14 @@ describe('VerticalHub', () => {
     renderAt('/events/not-a-real-vertical');
     expect(screen.getByText(/couldn't find/i)).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Back to Home/i })).toHaveAttribute('href', '/');
+  });
+
+  it('supports exactly the non-Weddings vertical slugs defined in events.js', () => {
+    expect(Object.keys(VERTICALS).sort()).toEqual(nonWeddingSlugs.sort());
+  });
+
+  it.each(nonWeddingSlugs)('renders a hero heading for the %s vertical without throwing', (slug) => {
+    expect(() => renderAt(`/events/${slug}`)).not.toThrow();
+    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument();
   });
 });

@@ -12,7 +12,7 @@ import { decorDesign } from '../data/decorDesign';
 import { specialCultural } from '../data/specialCultural';
 import { destinationEvents } from '../data/destinationEvents';
 
-const VERTICALS = {
+export const VERTICALS = {
   'corporate-events': {
     label: 'Corporate Events',
     heroImageId: 'vertical-corporate',

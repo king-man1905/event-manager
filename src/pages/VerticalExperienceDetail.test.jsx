@@ -1,9 +1,27 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen, within } from '@testing-library/react';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
-import VerticalExperienceDetail from './VerticalExperienceDetail';
+import VerticalExperienceDetail, { VERTICALS } from './VerticalExperienceDetail';
 import { corporateEvents } from '../data/corporateEvents';
+import { socialCelebrations } from '../data/socialCelebrations';
+import { kidsFamily } from '../data/kidsFamily';
+import { liveEntertainment } from '../data/liveEntertainment';
 import { decorDesign } from '../data/decorDesign';
+import { specialCultural } from '../data/specialCultural';
+import { destinationEvents } from '../data/destinationEvents';
+import { events } from '../data/events';
+
+const nonWeddingSlugs = events.filter((e) => e.slug !== 'weddings').map((e) => e.slug);
+
+const allItems = [
+  ['corporate-events', corporateEvents],
+  ['social-celebrations', socialCelebrations],
+  ['kids-family', kidsFamily],
+  ['live-entertainment', liveEntertainment],
+  ['decor-design', decorDesign],
+  ['special-cultural', specialCultural],
+  ['destination-events', destinationEvents],
+].flatMap(([vertical, items]) => items.map((item) => ({ vertical, item })));
 
 function renderAt(path) {
   return render(
@@ -66,6 +84,15 @@ describe('VerticalExperienceDetail', () => {
   it('shows a working not-found fallback for a valid vertical but unknown slug', () => {
     renderAt('/events/corporate-events/not-a-real-slug');
     expect(screen.getByText(/couldn't find/i)).toBeInTheDocument();
+  });
+
+  it('supports exactly the non-Weddings vertical slugs defined in events.js', () => {
+    expect(Object.keys(VERTICALS).sort()).toEqual(nonWeddingSlugs.sort());
+  });
+
+  it.each(allItems)('renders $item.href without throwing and shows its label as a heading', ({ vertical, item }) => {
+    expect(() => renderAt(`/events/${vertical}/${item.slug}`)).not.toThrow();
+    expect(screen.getByRole('heading', { name: item.label })).toBeInTheDocument();
   });
 
   it('gives image-less full-depth siblings distinct gallery rotations instead of an identical set', () => {

@@ -12,7 +12,7 @@ import EventCard from '../components/EventCard';
 import EditorialGrid from '../components/EditorialGrid';
 import Breadcrumb from '../components/Breadcrumb';
 
-const VERTICALS = {
+export const VERTICALS = {
   'corporate-events': {
     label: 'Corporate Events',
     data: corporateEvents,
