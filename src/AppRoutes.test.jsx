@@ -96,5 +96,14 @@ describe('AppRoutes', () => {
     );
     expect(screen.getByRole('heading', { name: /serving events across jharkhand/i })).toBeInTheDocument();
   });
+
+  it('routes /image-credits to ImageCredits', () => {
+    render(
+      <MemoryRouter initialEntries={['/image-credits']}>
+        <AppRoutes />
+      </MemoryRouter>
+    );
+    expect(screen.getByRole('heading', { name: 'Image Credits & Licenses' })).toBeInTheDocument();
+  });
 });
 

@@ -29,6 +29,7 @@ export default function VideoEmbed({ videoId, label }) {
         src={thumbnailUrl}
         alt={label}
         loading="lazy"
+        decoding="async"
         className="h-full w-full object-cover opacity-90 transition group-hover:opacity-100"
       />
       <span className="absolute inset-0 flex items-center justify-center">

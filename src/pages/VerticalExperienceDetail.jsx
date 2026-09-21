@@ -115,7 +115,14 @@ export default function VerticalExperienceDetail() {
       </div>
       <div data-testid="hero" className="relative mt-6 h-[50vh] min-h-[360px] w-full overflow-hidden">
         {image ? (
-          <img src={image.url} alt={image.altText} className="h-full w-full object-cover" />
+          <img
+            src={image.url}
+            alt={image.altText}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className="h-full w-full object-cover"
+          />
         ) : (
           <div className="flex h-full w-full items-center justify-center bg-charcoal">
             <span className="font-display text-4xl text-ivory">{item.label}</span>
@@ -154,6 +161,7 @@ export default function VerticalExperienceDetail() {
                       src={galleryImage.url}
                       alt={galleryImage.altText}
                       loading="lazy"
+                      decoding="async"
                       className="aspect-square w-full rounded object-cover"
                     />
                   ))}

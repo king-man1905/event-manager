@@ -23,7 +23,7 @@ export default function SectionTeaser({ teaser }) {
   return (
     <section className="grid grid-cols-1 items-center gap-10 px-6 py-20 md:grid-cols-2 md:px-16">
       <div className="aspect-[4/3] overflow-hidden">
-        <img src={image.url} alt={image.altText} loading="lazy" className="h-full w-full object-cover" />
+        <img src={image.url} alt={image.altText} loading="lazy" decoding="async" className="h-full w-full object-cover" />
       </div>
       <div>
         <p className="text-sm uppercase tracking-[0.2em] text-gold">{teaser.eyebrow}</p>

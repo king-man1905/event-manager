@@ -11,6 +11,7 @@ export default function EventCard({ event }) {
             src={image.url}
             alt={image.altText}
             loading="lazy"
+            decoding="async"
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (

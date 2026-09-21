@@ -48,4 +48,8 @@
     <loc>https://www.nextlevelevents.in/events/destination-events</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.nextlevelevents.in/image-credits</loc>
+    <priority>0.5</priority>
+  </url>
 </urlset>

@@ -12,7 +12,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 bg-charcoal">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded">
-          <img src={logo} alt="Next Level Events" className="h-10 w-10 rounded-full lg:h-12 lg:w-12" />
+          <img src={logo} alt="Next Level Events" width="48" height="48" className="h-10 w-10 rounded-full lg:h-12 lg:w-12 object-cover" />
           <span className="font-display text-xl text-ivory lg:text-2xl">Next Level Events</span>
         </Link>
         <div className="flex items-center gap-6">

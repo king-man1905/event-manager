@@ -22,7 +22,14 @@ export default function RealEventsHub() {
   return (
     <div>
       <div className="relative h-[45vh] min-h-[320px] w-full overflow-hidden">
-        <img src={heroImage.url} alt={heroImage.altText} className="h-full w-full object-cover" />
+        <img
+          src={heroImage.url}
+          alt={heroImage.altText}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          className="h-full w-full object-cover"
+        />
         <div className="absolute inset-0 bg-charcoal/50" />
         <div className="absolute inset-0 flex flex-col items-start justify-end px-6 pb-10 text-ivory md:px-16">
           <p className="text-sm uppercase tracking-[0.2em] text-gold">Real events, real moments</p>

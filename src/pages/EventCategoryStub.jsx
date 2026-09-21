@@ -45,7 +45,14 @@ export default function EventCategoryStub() {
   return (
     <div>
       <div className="relative h-[60vh] min-h-[420px] w-full overflow-hidden">
-        <img src={image.url} alt={image.altText} className="h-full w-full object-cover" />
+        <img
+          src={image.url}
+          alt={image.altText}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          className="h-full w-full object-cover"
+        />
         <div className="absolute inset-0 bg-charcoal/50" />
         <div className="absolute inset-0 flex flex-col items-start justify-end px-6 pb-12 text-ivory md:px-16">
           <p className="text-sm uppercase tracking-[0.2em] text-gold">Next Level Events</p>

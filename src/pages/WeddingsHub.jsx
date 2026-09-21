@@ -62,7 +62,14 @@ export default function WeddingsHub() {
   return (
     <div>
       <section className="relative flex h-[80vh] min-h-[520px] items-end overflow-hidden bg-charcoal">
-        <img src={heroImage.url} alt={heroImage.altText} className="absolute inset-0 h-full w-full object-cover opacity-80" />
+        <img
+          src={heroImage.url}
+          alt={heroImage.altText}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover opacity-80"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent" />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-14 text-ivory md:px-16">
           <p className="text-sm uppercase tracking-[0.3em] text-gold">The Flagship Experience</p>

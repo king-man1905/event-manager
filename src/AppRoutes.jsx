@@ -8,6 +8,7 @@ import VerticalExperienceDetail from './pages/VerticalExperienceDetail';
 import RealEventsHub from './pages/RealEventsHub';
 import SmartEnquiry from './pages/SmartEnquiry';
 import Locations from './pages/Locations';
+import ImageCredits from './pages/ImageCredits';
 
 export default function AppRoutes() {
   return (
@@ -16,6 +17,7 @@ export default function AppRoutes() {
       <Route path="/real-events" element={<RealEventsHub />} />
       <Route path="/enquire" element={<SmartEnquiry />} />
       <Route path="/locations" element={<Locations />} />
+      <Route path="/image-credits" element={<ImageCredits />} />
       <Route path="/events/weddings" element={<WeddingsHub />} />
       <Route path="/events/weddings/:layer/:slug" element={<ExperienceDetail />} />
       <Route path="/events/:vertical/:slug" element={<VerticalExperienceDetail />} />

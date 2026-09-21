@@ -8,6 +8,9 @@ export default function Hero() {
       <img
         src={image.url}
         alt={image.altText}
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
         className="absolute inset-0 h-full w-full object-cover opacity-80"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent" />
