@@ -485,7 +485,7 @@ export const socialCelebrations = [
   {
     slug: 'surprise-celebrations',
     label: 'Surprise Celebrations',
-    imageId: 'social-surprise-celebration',
+    imageId: null,
     depth: 'light',
     teaser: 'Surprise setups planned quietly and executed on time, every time.',
     href: '/events/social-celebrations/surprise-celebrations',
@@ -516,7 +516,7 @@ export const kidsFamily = [
   {
     slug: 'kids-birthday-themes',
     label: 'Kids Birthday Themes',
-    imageId: 'kids-birthday-theme',
+    imageId: null,
     depth: 'full',
     teaser: 'Jungle, princess, superhero or frozen — a birthday theme built around what your child actually loves.',
     description: 'A themed birthday is only as good as its details — backdrop, props and colour palette all need to genuinely match the theme, not just gesture at it with a banner.',
@@ -546,7 +546,7 @@ export const kidsFamily = [
   {
     slug: 'milestone-birthdays',
     label: 'Milestone Birthdays',
-    imageId: 'kids-milestone-birthday',
+    imageId: null,
     depth: 'full',
     teaser: 'First birthdays and other milestones, styled with a little more polish than the rest.',
     description: 'A first birthday or another milestone birthday calls for a step up in styling — more considered florals, a proper photo backdrop and a cake table that photographs well.',
@@ -561,7 +561,7 @@ export const kidsFamily = [
   {
     slug: 'baby-shower',
     label: 'Baby Shower',
-    imageId: 'kids-baby-shower',
+    imageId: null,
     depth: 'full',
     teaser: 'Baby showers styled in boho, floral or royal themes, however the family wants to celebrate.',
     description: "A baby shower is a smaller, more personal celebration — we style it around the family's chosen theme rather than a one-size-fits-all decoration set.",
@@ -584,7 +584,7 @@ export const kidsFamily = [
   {
     slug: 'welcome-home',
     label: 'Welcome Home Setup',
-    imageId: 'kids-welcome-home',
+    imageId: null,
     depth: 'light',
     teaser: 'A doorway and home welcome setup, ready for the day you bring your baby home.',
     href: '/events/kids-family/welcome-home',
@@ -715,7 +715,7 @@ export const decorDesign = [
   {
     slug: 'theme-decor-design',
     label: 'Theme Décor',
-    imageId: 'decor-theme',
+    imageId: null,
     depth: 'light',
     teaser: 'A cohesive theme carried through every visual detail of the event.',
     href: '/events/decor-design/theme-decor-design',
