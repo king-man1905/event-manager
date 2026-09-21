@@ -1,5 +1,3 @@
-import { SOCIALS } from './contact';
-
 export const homeTeasers = [
   {
     id: 'weddings-flagship',
