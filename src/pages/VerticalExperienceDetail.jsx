@@ -11,6 +11,7 @@ import WhatsAppCTA from '../components/WhatsAppCTA';
 import EventCard from '../components/EventCard';
 import EditorialGrid from '../components/EditorialGrid';
 import Breadcrumb from '../components/Breadcrumb';
+import { usePageMeta } from '../hooks/usePageMeta';
 
 export const VERTICALS = {
   'corporate-events': {
@@ -66,6 +67,13 @@ export default function VerticalExperienceDetail() {
   const { vertical, slug } = useParams();
   const verticalConfig = VERTICALS[vertical];
   const item = verticalConfig?.data.find((entry) => entry.slug === slug);
+
+  usePageMeta({
+    title: item && verticalConfig
+      ? `${item.label} — ${verticalConfig.label} | Next Level Events Ranchi`
+      : 'Event Experience | Next Level Events',
+    description: item?.teaser || 'Event planning and celebration services across Jharkhand by Next Level Events.',
+  });
 
   if (!verticalConfig || !item) {
     return <NotFound />;
@@ -157,13 +165,13 @@ export default function VerticalExperienceDetail() {
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <WhatsAppCTA
             message={verticalConfig.message(item)}
-            className="inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal hover:bg-gold/90 transition-colors"
+            className="inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal hover:bg-gold/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-charcoal"
           >
             Enquire on WhatsApp
           </WhatsAppCTA>
           <Link
             to={`/enquire?vertical=${vertical}&experience=${item.slug}`}
-            className="inline-block border border-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-gold hover:bg-gold hover:text-charcoal transition-colors"
+            className="inline-block border border-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-gold hover:bg-gold hover:text-charcoal transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             Plan With Smart Enquiry
           </Link>

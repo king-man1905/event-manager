@@ -11,6 +11,7 @@ import { liveEntertainment } from '../data/liveEntertainment';
 import { decorDesign } from '../data/decorDesign';
 import { specialCultural } from '../data/specialCultural';
 import { destinationEvents } from '../data/destinationEvents';
+import { usePageMeta } from '../hooks/usePageMeta';
 
 export const VERTICALS = {
   'corporate-events': {
@@ -73,6 +74,11 @@ export default function VerticalHub() {
   const { slug } = useParams();
   const vertical = VERTICALS[slug];
 
+  usePageMeta({
+    title: vertical ? `${vertical.label} | Next Level Events Ranchi` : 'Events | Next Level Events',
+    description: vertical?.tagline || 'Event planning and production across Ranchi and Jharkhand by Next Level Events.',
+  });
+
   if (!vertical) {
     return <NotFound />;
   }
@@ -90,11 +96,11 @@ export default function VerticalHub() {
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent" />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-14 text-ivory md:px-16">
           <p className="text-sm uppercase tracking-[0.3em] text-gold">Next Level Events</p>
-          <h1 className="mt-4 max-w-3xl font-display text-5xl leading-tight md:text-7xl">{vertical.label}</h1>
+          <h1 className="mt-4 max-w-3xl font-display text-4xl sm:text-5xl md:text-7xl leading-tight">{vertical.label}</h1>
           <p className="mt-6 max-w-xl text-ivory/80">{vertical.tagline}</p>
           <WhatsAppCTA
             message={`Hi, I'm interested in planning ${vertical.label.toLowerCase()} with Next Level Events.`}
-            className="mt-8 inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal"
+            className="mt-8 inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal hover:bg-gold/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ivory"
           >
             Enquire on WhatsApp
           </WhatsAppCTA>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { PHONE_DISPLAY, PHONE_TEL, EMAIL, ADDRESS, MAP_URL, SOCIALS } from '../data/contact';
 import logo from '../assets/brand/logo.png';
 import manifest from '../assets/manifest.json';
@@ -25,25 +26,25 @@ export default function Footer() {
           <p className="text-sm uppercase tracking-widest text-gold">Contact</p>
           <ul className="mt-4 space-y-2 text-sm text-ivory/80">
             <li>
-              <a href={PHONE_TEL}>{PHONE_DISPLAY}</a>
+              <a href={PHONE_TEL} className="hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold">{PHONE_DISPLAY}</a>
             </li>
             <li>
-              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+              <a href={`mailto:${EMAIL}`} className="hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold">{EMAIL}</a>
             </li>
             <li>
-              <a href={MAP_URL} target="_blank" rel="noopener noreferrer">
+              <a href={MAP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold">
                 {ADDRESS}
               </a>
             </li>
             <li className="pt-2">
-              <a href="/locations" className="text-gold/90 hover:text-gold">
+              <Link to="/locations" className="text-gold/90 hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold">
                 Where We Work (Locations)
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/enquire" className="text-gold/90 hover:text-gold">
+              <Link to="/enquire" className="text-gold/90 hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold">
                 Plan Your Event (Enquiry)
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

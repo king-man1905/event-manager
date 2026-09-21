@@ -4,7 +4,7 @@ import { getImage } from '../data/images';
 export default function EventCard({ event }) {
   const image = event.imageId ? getImage(event.imageId) : null;
   return (
-    <Link to={event.href} className="group block">
+    <Link to={event.href} className="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded">
       <div className="aspect-[4/5] overflow-hidden bg-neutral">
         {image ? (
           <img
@@ -19,7 +19,7 @@ export default function EventCard({ event }) {
           </div>
         )}
       </div>
-      <h3 className="mt-4 font-display text-2xl text-charcoal">{event.label}</h3>
+      <h3 className="mt-4 font-display text-2xl text-charcoal group-hover:text-gold transition-colors">{event.label}</h3>
       <p className="mt-1 text-sm text-charcoal/70">{event.teaser}</p>
     </Link>
   );

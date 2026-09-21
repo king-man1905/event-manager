@@ -8,7 +8,7 @@ export default function FinalCTA() {
       </h2>
       <WhatsAppCTA
         message="Hi, I'd like to start planning my event with Next Level Events."
-        className="mt-8 inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal"
+        className="mt-8 inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal hover:bg-gold/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ivory"
       >
         Start Planning on WhatsApp
       </WhatsAppCTA>

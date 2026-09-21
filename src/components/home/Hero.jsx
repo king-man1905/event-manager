@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent" />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-16 text-ivory md:px-16">
         <p className="text-sm uppercase tracking-[0.3em] text-gold">Ranchi, Jharkhand</p>
-        <h1 className="mt-4 max-w-3xl font-display text-5xl leading-tight md:text-7xl">
+        <h1 className="mt-4 max-w-3xl font-display text-4xl sm:text-5xl md:text-7xl leading-tight">
           Every celebration, planned like it's the only one that matters.
         </h1>
         <p className="mt-6 max-w-xl text-ivory/80">
@@ -22,7 +22,7 @@ export default function Hero() {
         </p>
         <WhatsAppCTA
           message="Hi, I'd like to know more about planning my event with Next Level Events."
-          className="mt-8 inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal"
+          className="mt-8 inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal hover:bg-gold/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ivory"
         >
           Plan Your Event
         </WhatsAppCTA>

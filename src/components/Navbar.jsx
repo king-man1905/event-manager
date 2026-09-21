@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 bg-charcoal">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link to="/" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded">
           <img src={logo} alt="Next Level Events" className="h-10 w-10 rounded-full lg:h-12 lg:w-12" />
           <span className="font-display text-xl text-ivory lg:text-2xl">Next Level Events</span>
         </Link>
@@ -19,13 +19,13 @@ export default function Navbar() {
           <MegaMenu items={nav} />
           <Link
             to="/enquire"
-            className="hidden sm:inline-block bg-gold px-4 py-2 font-sans text-xs uppercase tracking-wider font-semibold text-charcoal hover:bg-gold/90 transition-colors"
+            className="hidden sm:inline-block bg-gold px-4 py-2 font-sans text-xs uppercase tracking-wider font-semibold text-charcoal hover:bg-gold/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ivory rounded"
           >
             Enquire
           </Link>
           <button
             type="button"
-            className="text-ivory lg:hidden"
+            className="text-ivory lg:hidden p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
             aria-label="Open menu"
             onClick={() => setDrawerOpen(true)}
           >

@@ -14,18 +14,24 @@ export default function MegaMenu({ items }) {
             className="relative"
             onMouseEnter={() => hasColumns && setOpenIndex(index)}
             onMouseLeave={() => hasColumns && setOpenIndex(null)}
+            onKeyDown={(e) => {
+              if (e.key === 'Escape') setOpenIndex(null);
+            }}
           >
             {hasColumns ? (
               <button
                 type="button"
-                className="font-sans text-sm uppercase tracking-wide text-ivory"
+                className="font-sans text-sm uppercase tracking-wide text-ivory hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
                 aria-expanded={openIndex === index}
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
                 {item.label}
               </button>
             ) : (
-              <Link to={item.href} className="font-sans text-sm uppercase tracking-wide text-ivory">
+              <Link
+                to={item.href}
+                className="font-sans text-sm uppercase tracking-wide text-ivory hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
+              >
                 {item.label}
               </Link>
             )}
@@ -39,7 +45,11 @@ export default function MegaMenu({ items }) {
                     <ul className="mt-3 space-y-2">
                       {column.links.map((link) => (
                         <li key={link.href}>
-                          <Link to={link.href} className="text-charcoal hover:text-gold">
+                          <Link
+                            to={link.href}
+                            onClick={() => setOpenIndex(null)}
+                            className="text-charcoal hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
+                          >
                             {link.label}
                           </Link>
                         </li>

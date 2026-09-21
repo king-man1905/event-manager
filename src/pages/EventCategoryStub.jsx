@@ -9,12 +9,32 @@ export default function EventCategoryStub() {
 
   if (!event) {
     return (
-      <div className="mx-auto max-w-3xl px-6 py-24 text-center">
-        <h1 className="font-display text-3xl text-charcoal">We couldn't find that event type</h1>
-        <p className="mt-4 text-charcoal/70">Let's find the right celebration for you instead.</p>
-        <Link to="/" className="mt-6 inline-block text-gold underline">
-          Back to Home
-        </Link>
+      <div className="mx-auto max-w-3xl px-6 py-28 text-center">
+        <p className="text-xs uppercase tracking-[0.3em] font-semibold text-gold">404 — Page Not Found</p>
+        <h1 className="mt-3 font-display text-4xl text-charcoal sm:text-5xl">We couldn't find that celebration</h1>
+        <p className="mt-4 text-sm text-charcoal/70 max-w-md mx-auto">
+          The link you followed may be incorrect, or the celebration page may have moved. Let's find the right experience for you instead.
+        </p>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <Link
+            to="/"
+            className="bg-gold px-6 py-3 font-sans text-xs uppercase tracking-widest font-semibold text-charcoal hover:bg-gold/90 transition-colors"
+          >
+            Back to Home
+          </Link>
+          <Link
+            to="/real-events"
+            className="border border-charcoal/20 bg-ivory px-6 py-3 font-sans text-xs uppercase tracking-widest font-semibold text-charcoal hover:border-gold transition-colors"
+          >
+            See Real Events
+          </Link>
+          <Link
+            to="/enquire"
+            className="border border-gold bg-ivory px-6 py-3 font-sans text-xs uppercase tracking-widest font-semibold text-charcoal hover:bg-gold transition-colors"
+          >
+            Plan Your Event
+          </Link>
+        </div>
       </div>
     );
   }
@@ -35,9 +55,9 @@ export default function EventCategoryStub() {
       <div className="mx-auto max-w-3xl px-6 py-16">
         <p className="text-lg text-charcoal/80">{event.teaser}</p>
         <p className="mt-6 text-charcoal/70">
-          Our full {event.label.toLowerCase()} experience — the specific rituals, décor and planning
-          we handle — is being added to the site in the next phase. In the meantime, tell us what
-          you're planning and our team will respond directly.
+          From bespoke styling and floral arrangements to complete vendor coordination and full-day
+          management, tell us what you're planning and our Ranchi team will create a tailored proposal
+          for your celebration.
         </p>
         <WhatsAppCTA
           message={`Hi, I'm interested in planning ${event.label.toLowerCase()} with Next Level Events.`}

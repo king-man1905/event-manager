@@ -1,11 +1,16 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import Footer from './Footer';
 import { PHONE_TEL, EMAIL, MAP_URL, SOCIALS } from '../data/contact';
 
 describe('Footer', () => {
   it('renders working links for phone, email, map and every social channel', () => {
-    render(<Footer />);
+    render(
+      <MemoryRouter>
+        <Footer />
+      </MemoryRouter>
+    );
     expect(screen.getByRole('link', { name: /\+91/ })).toHaveAttribute('href', PHONE_TEL);
     expect(screen.getByRole('link', { name: EMAIL })).toHaveAttribute('href', `mailto:${EMAIL}`);
     expect(screen.getByRole('link', { name: 'Instagram' })).toHaveAttribute('href', SOCIALS.instagram);
@@ -15,7 +20,11 @@ describe('Footer', () => {
   });
 
   it('renders visible attribution for every CC-licensed image', () => {
-    render(<Footer />);
+    render(
+      <MemoryRouter>
+        <Footer />
+      </MemoryRouter>
+    );
     expect(screen.getByText('Image Credits')).toBeInTheDocument();
     expect(
       screen.getByText(/Imakanksha.*CC BY-SA 4\.0/)
@@ -23,7 +32,11 @@ describe('Footer', () => {
   });
 
   it('renders links for locations and enquiry', () => {
-    render(<Footer />);
+    render(
+      <MemoryRouter>
+        <Footer />
+      </MemoryRouter>
+    );
     expect(screen.getByRole('link', { name: /Where We Work/ })).toHaveAttribute('href', '/locations');
     expect(screen.getByRole('link', { name: /Plan Your Event/ })).toHaveAttribute('href', '/enquire');
   });

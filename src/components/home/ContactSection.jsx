@@ -18,7 +18,7 @@ export default function ContactSection() {
         </a>
         <WhatsAppCTA
           message="Hi, I'd like to know more about planning my event with Next Level Events."
-          className="mt-4 inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal"
+          className="mt-4 inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal hover:bg-gold/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-charcoal"
         >
           Message Us on WhatsApp
         </WhatsAppCTA>

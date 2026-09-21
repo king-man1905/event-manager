@@ -4,10 +4,11 @@ import { PHONE_TEL, EMAIL } from '../data/contact';
 import { usePageMeta } from '../hooks/usePageMeta';
 
 export default function Locations() {
-  usePageMeta(
-    'Event Locations & Service Areas | Next Level Events Ranchi',
-    'Based in Ranchi, serving events across Jharkhand. Discover Next Level Events primary studio and outstation destination event capabilities.'
-  );
+  usePageMeta({
+    title: 'Event Locations & Service Areas | Next Level Events Ranchi',
+    description:
+      'Based in Ranchi, serving events across Jharkhand. Discover Next Level Events primary studio and outstation destination event capabilities.',
+  });
 
   const { primary, jharkhandServiceArea, outsideJharkhand } = locationsData;
 

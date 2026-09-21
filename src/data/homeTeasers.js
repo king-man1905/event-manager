@@ -5,7 +5,7 @@ export const homeTeasers = [
     eyebrow: 'The flagship experience',
     title: 'Weddings, planned as one continuous story.',
     description:
-      'Every function, from Haldi to Reception, styled and coordinated together — the full experience is arriving in the next phase.',
+      'From Haldi to Reception, every ceremony styled, planned, and managed with seamless coordination across Ranchi and Jharkhand.',
     ctaLabel: 'Explore Weddings',
     href: '/events/weddings',
   },
@@ -25,7 +25,7 @@ export const homeTeasers = [
     eyebrow: 'Event inspiration',
     title: 'Ideas for every ritual and celebration.',
     description:
-      'A dedicated inspiration system, organised by wedding, birthday, décor and culture, is arriving in a later phase.',
+      'Décor themes, floral concepts, entrance styling, and ritual backdrops designed specifically for your celebration.',
     ctaLabel: 'Ask Us for Ideas',
     href: '/#contact',
   },
@@ -35,7 +35,7 @@ export const homeTeasers = [
     eyebrow: 'The transformation',
     title: 'From bare venue to finished celebration.',
     description:
-      'Before-and-after stories from real setups are coming to this page once we have verified pairs to show.',
+      'From bare banquet halls and open lawns to fully immersive celebration environments with custom staging and ambient lighting.',
     ctaLabel: 'See Our Services',
     href: '/#services',
   },

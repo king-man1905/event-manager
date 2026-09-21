@@ -106,17 +106,17 @@ export default function StepConfirmation({ formData, onEdit }) {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex w-full items-center justify-center gap-2 bg-gold py-3.5 px-6 font-sans text-xs uppercase tracking-widest font-bold text-charcoal hover:bg-gold/90 shadow-md transition-colors"
+          className="flex min-h-[48px] w-full items-center justify-center gap-2 bg-gold py-3.5 px-6 font-sans text-xs uppercase tracking-widest font-bold text-charcoal hover:bg-gold/90 shadow-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-charcoal"
         >
           <span>Send on WhatsApp</span>
           <span aria-hidden="true">→</span>
         </a>
 
-        <div className="flex flex-wrap gap-2 sm:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
           <button
             type="button"
             onClick={onEdit}
-            className="flex-1 border border-charcoal/20 bg-ivory py-2.5 px-4 font-sans text-xs uppercase tracking-wider font-semibold text-charcoal hover:border-gold transition-colors"
+            className="flex min-h-[44px] w-full items-center justify-center border border-charcoal/20 bg-ivory py-2.5 px-3 text-center font-sans text-xs uppercase tracking-wider font-semibold text-charcoal hover:border-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             ← Back to Edit
           </button>
@@ -124,14 +124,14 @@ export default function StepConfirmation({ formData, onEdit }) {
           <button
             type="button"
             onClick={handleCopy}
-            className="flex-1 border border-charcoal/20 bg-ivory py-2.5 px-4 font-sans text-xs uppercase tracking-wider font-semibold text-charcoal hover:border-gold transition-colors"
+            className="flex min-h-[44px] w-full items-center justify-center border border-charcoal/20 bg-ivory py-2.5 px-3 text-center font-sans text-xs uppercase tracking-wider font-semibold text-charcoal hover:border-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
-            {copied ? '✓ Copied to Clipboard' : 'Copy Summary'}
+            {copied ? '✓ Copied' : 'Copy Summary'}
           </button>
 
           <a
             href={PHONE_TEL}
-            className="flex-1 text-center border border-charcoal/20 bg-ivory py-2.5 px-4 font-sans text-xs uppercase tracking-wider font-semibold text-charcoal hover:border-gold transition-colors"
+            className="flex min-h-[44px] w-full items-center justify-center border border-charcoal/20 bg-ivory py-2.5 px-3 text-center font-sans text-xs uppercase tracking-wider font-semibold text-charcoal hover:border-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             Call {PHONE_DISPLAY}
           </a>
@@ -140,7 +140,7 @@ export default function StepConfirmation({ formData, onEdit }) {
             href={`mailto:${EMAIL}?subject=${encodeURIComponent(
               `Event Enquiry: ${formData.verticalLabel || 'Celebration'}`
             )}&body=${encodeURIComponent(messageText)}`}
-            className="flex-1 text-center border border-charcoal/20 bg-ivory py-2.5 px-4 font-sans text-xs uppercase tracking-wider font-semibold text-charcoal hover:border-gold transition-colors"
+            className="flex min-h-[44px] w-full items-center justify-center border border-charcoal/20 bg-ivory py-2.5 px-3 text-center font-sans text-xs uppercase tracking-wider font-semibold text-charcoal hover:border-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             Send Email
           </a>

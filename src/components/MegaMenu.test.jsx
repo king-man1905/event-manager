@@ -26,4 +26,25 @@ describe('MegaMenu', () => {
     );
     expect(screen.getByRole('link', { name: 'Home' })).toHaveAttribute('href', '/');
   });
+
+  it('closes the dropdown on Escape key and on link click', () => {
+    render(
+      <MemoryRouter>
+        <MegaMenu items={nav} />
+      </MemoryRouter>
+    );
+    const eventsButton = screen.getByRole('button', { name: 'Events' });
+    fireEvent.click(eventsButton);
+    expect(screen.getByRole('link', { name: 'Weddings' })).toBeInTheDocument();
+
+    // Escape closes
+    fireEvent.keyDown(eventsButton, { key: 'Escape' });
+    expect(screen.queryByRole('link', { name: 'Weddings' })).not.toBeInTheDocument();
+
+    // Reopen and test link click closes
+    fireEvent.click(eventsButton);
+    const weddingsLink = screen.getByRole('link', { name: 'Weddings' });
+    fireEvent.click(weddingsLink);
+    expect(screen.queryByRole('link', { name: 'Weddings' })).not.toBeInTheDocument();
+  });
 });

@@ -9,6 +9,7 @@ import { culturalWeddings } from '../data/culturalWeddings';
 import { weddingFunctions } from '../data/weddingFunctions';
 import { weddingExperiences } from '../data/weddingExperiences';
 import { weddingDecor } from '../data/weddingDecor';
+import { usePageMeta } from '../hooks/usePageMeta';
 
 const SUB_NAV = [
   { id: 'cultural', label: 'Cultural Weddings' },
@@ -50,6 +51,12 @@ function LayerSection({ id, eyebrow, title, description, items }) {
 }
 
 export default function WeddingsHub() {
+  usePageMeta({
+    title: 'Weddings | Next Level Events Ranchi',
+    description:
+      'Complete wedding planning and décor production across Ranchi and Jharkhand. Cultural traditions, pre-wedding rituals, mandap design, and seamless full-day execution.',
+  });
+
   const heroImage = getImage('vertical-weddings');
 
   return (
@@ -59,7 +66,7 @@ export default function WeddingsHub() {
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent" />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-14 text-ivory md:px-16">
           <p className="text-sm uppercase tracking-[0.3em] text-gold">The Flagship Experience</p>
-          <h1 className="mt-4 max-w-3xl font-display text-5xl leading-tight md:text-7xl">
+          <h1 className="mt-4 max-w-3xl font-display text-4xl sm:text-5xl md:text-7xl leading-tight">
             Weddings, planned as one continuous story.
           </h1>
           <p className="mt-6 max-w-xl text-ivory/80">
@@ -68,7 +75,7 @@ export default function WeddingsHub() {
           </p>
           <WhatsAppCTA
             message="Hi, I'd like to start planning my wedding with Next Level Events."
-            className="mt-8 inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal"
+            className="mt-8 inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal hover:bg-gold/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ivory"
           >
             Plan Your Wedding
           </WhatsAppCTA>
@@ -135,18 +142,26 @@ export default function WeddingsHub() {
       <section id="real-weddings" className="mx-auto max-w-3xl scroll-mt-36 px-6 py-20 text-center">
         <SectionHeading
           eyebrow="Real weddings"
-          title="Coming soon, honestly."
-          description="We're building a gallery of genuine Next Level Events wedding work as real projects are documented and cleared for sharing — no stock photography, no fabricated stories. Until then, see real, current work on Instagram."
+          title="Real Wedding Celebrations"
+          description="Watch real wedding celebrations, entries, and mandap productions captured on video in our Real Events showcase, or follow daily behind-the-scenes on Instagram."
           align="center"
         />
-        <a
-          href={SOCIALS.instagram}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 inline-block text-gold underline"
-        >
-          See Real Work on Instagram
-        </a>
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+          <Link
+            to="/real-events"
+            className="inline-block bg-gold px-6 py-2.5 font-sans text-xs uppercase tracking-widest font-semibold text-charcoal hover:bg-gold/90 transition-colors"
+          >
+            Watch Real Wedding Videos
+          </Link>
+          <a
+            href={SOCIALS.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-gold px-6 py-2.5 font-sans text-xs uppercase tracking-widest font-semibold text-gold hover:bg-gold hover:text-charcoal transition-colors"
+          >
+            See Real Work on Instagram
+          </a>
+        </div>
       </section>
     </div>
   );

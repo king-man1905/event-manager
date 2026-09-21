@@ -4,10 +4,11 @@ import { parseEnquiryParams } from '../utils/enquiryHelpers';
 import { usePageMeta } from '../hooks/usePageMeta';
 
 export default function SmartEnquiry() {
-  usePageMeta(
-    'Plan Your Event | Smart Enquiry | Next Level Events Ranchi',
-    'Custom event planning enquiry for weddings, birthdays, corporate and social events across Jharkhand and destination celebrations by Next Level Events.'
-  );
+  usePageMeta({
+    title: 'Plan Your Event | Smart Enquiry | Next Level Events Ranchi',
+    description:
+      'Custom event planning enquiry for weddings, birthdays, corporate and social events across Jharkhand and destination celebrations by Next Level Events.',
+  });
 
   const [searchParams] = useSearchParams();
   const initialValues = parseEnquiryParams(searchParams);

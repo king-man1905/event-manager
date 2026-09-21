@@ -7,10 +7,17 @@ import HowWeWork from '../components/home/HowWeWork';
 import FinalCTA from '../components/home/FinalCTA';
 import ContactSection from '../components/home/ContactSection';
 import { homeTeasers } from '../data/homeTeasers';
+import { usePageMeta } from '../hooks/usePageMeta';
 
 const teaserById = Object.fromEntries(homeTeasers.map((teaser) => [teaser.id, teaser]));
 
 export default function Home() {
+  usePageMeta({
+    title: 'Next Level Events — Wedding, Birthday & Corporate Event Planners in Ranchi, Jharkhand',
+    description:
+      'Next Level Events plans and produces weddings, birthdays, corporate events and custom celebrations across Ranchi and Jharkhand. Premium décor, planning and full-day management, end to end.',
+  });
+
   return (
     <>
       <Hero />

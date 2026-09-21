@@ -8,6 +8,7 @@ import WhatsAppCTA from '../components/WhatsAppCTA';
 import EventCard from '../components/EventCard';
 import EditorialGrid from '../components/EditorialGrid';
 import Breadcrumb from '../components/Breadcrumb';
+import { usePageMeta } from '../hooks/usePageMeta';
 
 const LAYERS = {
   cultural: {
@@ -48,6 +49,13 @@ export default function ExperienceDetail() {
   const { layer, slug } = useParams();
   const layerConfig = LAYERS[layer];
   const item = layerConfig?.data.find((entry) => entry.slug === slug);
+
+  usePageMeta({
+    title: item && layerConfig
+      ? `${item.label} — Weddings | Next Level Events Ranchi`
+      : 'Wedding Experience | Next Level Events',
+    description: item?.teaser || 'Wedding planning and bespoke event experiences in Ranchi by Next Level Events.',
+  });
 
   if (!layerConfig || !item) {
     return <NotFound />;
@@ -136,13 +144,13 @@ export default function ExperienceDetail() {
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <WhatsAppCTA
             message={layerConfig.message(item)}
-            className="inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal hover:bg-gold/90 transition-colors"
+            className="inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal hover:bg-gold/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-charcoal"
           >
             Enquire on WhatsApp
           </WhatsAppCTA>
           <Link
             to={`/enquire?vertical=weddings&layer=${layer}&experience=${item.slug}`}
-            className="inline-block border border-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-gold hover:bg-gold hover:text-charcoal transition-colors"
+            className="inline-block border border-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-gold hover:bg-gold hover:text-charcoal transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             Plan With Smart Enquiry
           </Link>
