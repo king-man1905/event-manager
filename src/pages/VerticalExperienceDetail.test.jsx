@@ -65,6 +65,12 @@ describe('VerticalExperienceDetail', () => {
     expect(decodeURIComponent(href)).toContain('Baby Shower');
   });
 
+  it('renders a contextual Smart Enquiry link with query parameters', () => {
+    renderAt('/events/kids-family/baby-shower');
+    const link = screen.getByRole('link', { name: /plan with smart enquiry/i });
+    expect(link).toHaveAttribute('href', '/enquire?vertical=kids-family&experience=baby-shower');
+  });
+
   it('renders related experiences from the same vertical, excluding itself', () => {
     renderAt('/events/corporate-events/product-launch');
     const others = corporateEvents.filter((i) => i.slug !== 'product-launch').slice(0, 3);

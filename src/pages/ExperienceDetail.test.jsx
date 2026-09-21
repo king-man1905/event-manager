@@ -57,6 +57,12 @@ describe('ExperienceDetail', () => {
     expect(decodeURIComponent(href)).toContain('Haldi');
   });
 
+  it('renders a contextual Smart Enquiry link with query parameters', () => {
+    renderAt('/events/weddings/functions/haldi');
+    const link = screen.getByRole('link', { name: /plan with smart enquiry/i });
+    expect(link).toHaveAttribute('href', '/enquire?vertical=weddings&layer=functions&experience=haldi');
+  });
+
   it('renders related experiences from the same layer, excluding itself', () => {
     renderAt('/events/weddings/functions/haldi');
     const others = weddingFunctions.filter((i) => i.slug !== 'haldi').slice(0, 3);

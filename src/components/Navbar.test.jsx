@@ -24,4 +24,14 @@ describe('Navbar', () => {
     fireEvent.click(menuButton);
     expect(screen.getByRole('button', { name: 'Close menu' })).toBeInTheDocument();
   });
+
+  it('renders an Enquire CTA button linking to /enquire', () => {
+    render(
+      <MemoryRouter>
+        <Navbar />
+      </MemoryRouter>
+    );
+    expect(screen.getByRole('link', { name: 'Enquire' })).toHaveAttribute('href', '/enquire');
+  });
 });
+

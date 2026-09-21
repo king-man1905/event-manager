@@ -6,12 +6,16 @@ import ExperienceDetail from './pages/ExperienceDetail';
 import VerticalHub from './pages/VerticalHub';
 import VerticalExperienceDetail from './pages/VerticalExperienceDetail';
 import RealEventsHub from './pages/RealEventsHub';
+import SmartEnquiry from './pages/SmartEnquiry';
+import Locations from './pages/Locations';
 
 export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/real-events" element={<RealEventsHub />} />
+      <Route path="/enquire" element={<SmartEnquiry />} />
+      <Route path="/locations" element={<Locations />} />
       <Route path="/events/weddings" element={<WeddingsHub />} />
       <Route path="/events/weddings/:layer/:slug" element={<ExperienceDetail />} />
       <Route path="/events/:vertical/:slug" element={<VerticalExperienceDetail />} />

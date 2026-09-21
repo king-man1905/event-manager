@@ -1,0 +1,62 @@
+import { ADDRESS, PHONE_DISPLAY, EMAIL, MAP_URL } from './contact';
+
+export const JHARKHAND_DISTRICTS = [
+  'Ranchi',
+  'Bokaro',
+  'Chatra',
+  'Deoghar',
+  'Dhanbad',
+  'Dumka',
+  'East Singhbhum (Jamshedpur)',
+  'Garhwa',
+  'Giridih',
+  'Godda',
+  'Gumla',
+  'Hazaribagh',
+  'Jamtara',
+  'Khunti',
+  'Koderma',
+  'Latehar',
+  'Lohardaga',
+  'Pakur',
+  'Palamu',
+  'Ramgarh',
+  'Sahibganj',
+  'Saraikela-Kharsawan',
+  'Simdega',
+  'West Singhbhum',
+];
+
+export const locationsData = {
+  primary: {
+    city: 'Ranchi',
+    state: 'Jharkhand',
+    title: 'Ranchi Flagship Studio & Headquarters',
+    tagline: 'Our core team, design studio, and primary operations are based right here.',
+    address: ADDRESS,
+    phone: PHONE_DISPLAY,
+    email: EMAIL,
+    status: 'primary-studio',
+    mapUrl: MAP_URL,
+    coverageNote: 'Full end-to-end planning, décor production, and day-of management across all Ranchi venues.',
+  },
+  jharkhandServiceArea: {
+    title: 'Across Jharkhand',
+    headline: 'Based in Ranchi, serving events across Jharkhand.',
+    description: 'We provide full event planning, bespoke décor, live entertainment, and execution across Jharkhand districts. Our specialized production and styling crew travels directly from our Ranchi headquarters to coordinate and manage your celebration on-site.',
+    districts: JHARKHAND_DISTRICTS,
+    notice: 'Service area coverage — all operations and inventory are managed directly from our Ranchi headquarters. We do not operate standalone physical branches in secondary districts.',
+  },
+  outsideJharkhand: {
+    title: 'Outside Jharkhand — Outstation & Destination Events',
+    tagline: 'We travel with our core production and styling team for destination celebrations.',
+    status: 'outstation-available',
+    description: 'For celebrations outside Jharkhand, Next Level Events manages weddings, corporate retreats, and destination milestones upon enquiry.',
+    howItWorks: [
+      { step: '1. Remote Design & Consultation', desc: 'Detailed virtual meetings, mood boards, and layout planning from our Ranchi studio.' },
+      { step: '2. On-Site Recce & Coordination', desc: 'Our planners visit your venue in advance to coordinate power, staging, and vendor logistics.' },
+      { step: '3. Full On-Site Deployment', desc: 'Our core styling and coordination team travels to your destination to run production start to finish.' },
+    ],
+    enquiryMessage: "Hi, I'd like to check Next Level Events' availability for an event outside Jharkhand.",
+  },
+};

@@ -50,6 +50,15 @@ export default function MobileDrawer({ items, isOpen, onClose }) {
             </div>
           );
         })}
+        <div className="pt-6 pb-8">
+          <Link
+            to="/enquire"
+            onClick={onClose}
+            className="flex w-full items-center justify-center bg-gold py-3 text-center font-sans text-xs uppercase tracking-widest font-semibold text-charcoal hover:bg-gold/90 transition-colors"
+          >
+            Plan Your Event
+          </Link>
+        </div>
       </nav>
     </div>
   );

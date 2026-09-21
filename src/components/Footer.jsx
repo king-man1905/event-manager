@@ -35,6 +35,16 @@ export default function Footer() {
                 {ADDRESS}
               </a>
             </li>
+            <li className="pt-2">
+              <a href="/locations" className="text-gold/90 hover:text-gold">
+                Where We Work (Locations)
+              </a>
+            </li>
+            <li>
+              <a href="/enquire" className="text-gold/90 hover:text-gold">
+                Plan Your Event (Enquiry)
+              </a>
+            </li>
           </ul>
         </div>
         <div>

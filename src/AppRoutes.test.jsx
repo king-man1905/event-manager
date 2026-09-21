@@ -78,4 +78,23 @@ describe('AppRoutes', () => {
     );
     expect(screen.getByRole('heading', { name: 'Real work, as it happens.' })).toBeInTheDocument();
   });
+
+  it('routes /enquire to SmartEnquiry', () => {
+    render(
+      <MemoryRouter initialEntries={['/enquire']}>
+        <AppRoutes />
+      </MemoryRouter>
+    );
+    expect(screen.getByRole('heading', { name: /plan your event/i })).toBeInTheDocument();
+  });
+
+  it('routes /locations to Locations', () => {
+    render(
+      <MemoryRouter initialEntries={['/locations']}>
+        <AppRoutes />
+      </MemoryRouter>
+    );
+    expect(screen.getByRole('heading', { name: /serving events across jharkhand/i })).toBeInTheDocument();
+  });
 });
+

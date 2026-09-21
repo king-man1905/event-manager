@@ -53,11 +53,11 @@ export const homeTeasers = [
     id: 'locations',
     imageId: 'vertical-destination',
     eyebrow: 'Where we work',
-    title: 'Ranchi first, and beyond on request.',
+    title: 'Based in Ranchi, serving events across Jharkhand.',
     description:
-      'A full Locations guide, organised by city and event type, is arriving in a later phase. For now, tell us your city directly.',
-    ctaLabel: 'Ask About Your City',
-    href: '/#contact',
+      'Our primary studio is in Ranchi, managing celebrations across Jharkhand districts — with outstation and destination events available on enquiry.',
+    ctaLabel: 'Explore Locations',
+    href: '/locations',
   },
   {
     id: 'social-video',

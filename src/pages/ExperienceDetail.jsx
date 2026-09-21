@@ -133,12 +133,20 @@ export default function ExperienceDetail() {
             )}
           </>
         )}
-        <WhatsAppCTA
-          message={layerConfig.message(item)}
-          className="mt-10 inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal"
-        >
-          Enquire on WhatsApp
-        </WhatsAppCTA>
+        <div className="mt-10 flex flex-wrap items-center gap-4">
+          <WhatsAppCTA
+            message={layerConfig.message(item)}
+            className="inline-block bg-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-charcoal hover:bg-gold/90 transition-colors"
+          >
+            Enquire on WhatsApp
+          </WhatsAppCTA>
+          <Link
+            to={`/enquire?vertical=weddings&layer=${layer}&experience=${item.slug}`}
+            className="inline-block border border-gold px-8 py-3 font-sans text-sm uppercase tracking-wide text-gold hover:bg-gold hover:text-charcoal transition-colors"
+          >
+            Plan With Smart Enquiry
+          </Link>
+        </div>
         <div className="mt-16">
           <p className="text-sm uppercase tracking-widest text-charcoal/50">Related experiences</p>
           <div className="mt-6">

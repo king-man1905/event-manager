@@ -27,7 +27,7 @@ describe('Home', () => {
       'From bare venue to finished celebration.', // Transformation teaser
       'The planning you never see on the day.', // Behind the Event teaser
       'From first message to the last dance.', // HowWeWork
-      'Ranchi first, and beyond on request.', // Locations teaser
+      'Based in Ranchi, serving events across Jharkhand.', // Locations teaser
       'Follow the real work as it happens.', // Social/Video teaser
       "Let's plan something worth remembering.", // FinalCTA
       'Tell us about your event.', // ContactSection

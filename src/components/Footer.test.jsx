@@ -21,4 +21,11 @@ describe('Footer', () => {
       screen.getByText(/Imakanksha.*CC BY-SA 4\.0/)
     ).toBeInTheDocument();
   });
+
+  it('renders links for locations and enquiry', () => {
+    render(<Footer />);
+    expect(screen.getByRole('link', { name: /Where We Work/ })).toHaveAttribute('href', '/locations');
+    expect(screen.getByRole('link', { name: /Plan Your Event/ })).toHaveAttribute('href', '/enquire');
+  });
 });
+

@@ -26,4 +26,14 @@ describe('MobileDrawer', () => {
       expect(screen.getByRole('link', { name: link.label })).toHaveAttribute('href', link.href);
     });
   });
+
+  it('renders a Plan Your Event button linking to /enquire', () => {
+    render(
+      <MemoryRouter>
+        <MobileDrawer items={nav} isOpen onClose={() => {}} />
+      </MemoryRouter>
+    );
+    expect(screen.getByRole('link', { name: 'Plan Your Event' })).toHaveAttribute('href', '/enquire');
+  });
 });
+

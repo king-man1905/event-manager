@@ -18,4 +18,9 @@ describe('nav data', () => {
   it('includes a Real Events link pointing at the new hub', () => {
     expect(nav.find((item) => item.label === 'Real Events').href).toBe('/real-events');
   });
+
+  it('includes a Locations link pointing at /locations', () => {
+    expect(nav.find((item) => item.label === 'Locations').href).toBe('/locations');
+  });
 });
+
