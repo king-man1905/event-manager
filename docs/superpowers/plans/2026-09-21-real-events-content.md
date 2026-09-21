@@ -19,7 +19,7 @@
 - WhatsApp CTA must use the real verified number, via the existing unchanged `WhatsAppCTA` component (which already reads `WHATSAPP_NUMBER` from `src/data/contact.js` — do not hardcode a number anywhere).
 - No new npm dependencies.
 - Click-to-load video embeds: no `<iframe>` exists in the DOM and no autoplay occurs until the user explicitly clicks play.
-- Full regression: every Phase 1–3 test must still pass unmodified (except the two exact-order assertions in `Home.test.jsx`/`homeTeasers.test.js` that this plan's Task 5 explicitly updates to match new, non-fabricated copy).
+- Full regression: every Phase 1–3 test must still pass unmodified, except one line in `Home.test.jsx`'s hardcoded heading-order array that this plan's Task 5 explicitly updates to match the one teaser title that changes. `homeTeasers.test.js` itself is not edited at all — its existing generic shape/uniqueness checks (not a hardcoded order) pass against the new copy unmodified.
 
 ---
 
